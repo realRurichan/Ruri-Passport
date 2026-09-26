@@ -24,6 +24,6 @@
 
 LCD RESET、NFC VEN、功放关闭、SD 卡检测、上/下/确认按钮拟接 GPIO 扩展器；最终扩展器型号与引脚尚未定义。电源按钮需要独立硬件控制，不依赖软件启动才能开机。关机请求不能因 MCU 复位悬空而误动作。
 
-LCD 暂按写入模式设计，RD 固定电平、TE 是否需要、接口模式选择电阻均待屏幕原厂资料。I2S 功放与麦克风必须确认时隙、位宽和共享时钟支持。
+LCD 已选 CL40BC264-40C 非触摸版，8 位并口写入模式：RD 拉高，TE 暂不接，IM0/IM1 拉高、IM2 拉低；详见 [屏幕定义](DISPLAY.md)。I2S 功放与麦克风必须确认时隙、位宽和共享时钟支持。
 
 参考：[Espressif 模组数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)。这不是最终网表，也不代表完整电路已验证。
