@@ -1,6 +1,7 @@
 # Current routing checkpoint
 
-This is an unfinished hardware draft, not a fabrication release.
+The routing and native electrical DRC checkpoint is complete. This is not
+a fabrication release; manufacturing and assembly qualifications remain open.
 
 The five front switches were moved away from the LCD. Their centres are
 UP (42,31), DOWN (42,17), LEFT (35,24), RIGHT (49,24), OK (42,24), in mm.
@@ -15,17 +16,31 @@ rejected; the existing routes on those nets were preserved. Fixed pad and
 via contacts with sub-0.01-mil rounding differences were aligned without
 changing nets, pad locations, trace widths or via drills.
 
-Latest native DRC: **0 external clearance errors, 2 USB footprint clearance
-errors, 42 disconnected objects**. These are error-object counts, not counts
-of missing individual wires. The detailed report is
-`drc-key-spacing-refined.json`; older DRC reports are historical snapshots.
-LEFT and OK signals have no remaining connection errors. UP, DOWN and RIGHT
-each still have two disconnected objects, so their routing is not complete.
+Latest native strict DRC: **0 violations**, after completing the key, LCD,
+NFC, microphone, charger and 3V18 routes, rebuilding all three ground pours,
+and correcting the USB footprint. The current report is
+`drc-routed-poured.json`; all other DRC reports are historical snapshots.
+No global clearance rules were relaxed and no errors were ignored.
 
-Three GND pour boundaries are present, but obsolete filled-copper caches
-were removed and the pours need recomputation after the remaining routing.
-USB locating-hole/pad clearance and exact connector qualification are still
-open. Do not order boards from this checkpoint.
+Top, Inner1 and Bottom GND pours were rebuilt and saved. The Inner1 layer
+remains the ground reference. The last isolated DOWN-switch ground pad was
+connected after rerouting the nearby CHG_ISET branch. Microphone BCLK was
+reworked to allow the DIN escape; the ESP supply completion uses 0.40 mm
+traces. Route additions and removed-object records accompany this report.
+
+The USB4105 footprint now follows GCT Rev B1 pad, locating-hole and shell-slot
+dimensions in both schematic and PCB sources. Its nominal 0.1751 mm NPTH
+copper clearance passes the existing 6 mil electrical rule but still requires
+JLC DFM acceptance against the usual 0.20 mm manufacturing clearance. See
+`usb-footprint-correction-20260926.md`; USB-1 is not a closed manufacturing item.
+Final Gerber/drill review, power/return-path review, sourcing, assembly and
+full two-unit quote are still required. Do not order from this checkpoint.
+
+The native JLC04161H-7628 physical stackup has now been applied and read back:
+35 um outer copper, 15.2 um inner copper, 0.2104/1.065/0.2104 mm dielectrics.
+The exported DFM draft passes the selected independent geometry checks in
+`gerber-draft-check.json` (four copper files, NPTHs, USB slots, pads, paste,
+and main outline). These focused checks do not replace complete DFM/CAM.
 
 The saved schematic export passes 350 pin-to-net assertions. All 569 native
 PCB pad-net assignments are unchanged by this mechanical adjustment.

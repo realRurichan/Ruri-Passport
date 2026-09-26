@@ -1,0 +1,224 @@
+{
+  "status": "Final native strict DRC after USB correction, ground pours and physical stackup: zero violations. Manufacturing release remains open.",
+  "plans": [
+    {
+      "net": "3V18",
+      "width": 0.4,
+      "vias": [
+        [
+          5.1,
+          29.400000000000002
+        ],
+        [
+          27.1,
+          32.400000000000006
+        ],
+        [
+          28.4,
+          32.400000000000006
+        ]
+      ],
+      "sections": [
+        {
+          "layer": 16,
+          "points": [
+            [
+              19.400012,
+              8.770035799999999
+            ],
+            [
+              20.2,
+              7.5
+            ],
+            [
+              19.8,
+              6.800000000000001
+            ],
+            [
+              6.2,
+              6.800000000000001
+            ],
+            [
+              4.9,
+              7.6000000000000005
+            ],
+            [
+              4.8,
+              8.4
+            ],
+            [
+              5.1,
+              29.400000000000002
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "points": [
+            [
+              5.1,
+              29.400000000000002
+            ],
+            [
+              8.4,
+              34.0
+            ],
+            [
+              12.5,
+              36.300000000000004
+            ],
+            [
+              23.5,
+              37.900000000000006
+            ],
+            [
+              24.0,
+              37.7
+            ],
+            [
+              25.2,
+              34.300000000000004
+            ],
+            [
+              27.1,
+              32.400000000000006
+            ]
+          ]
+        },
+        {
+          "layer": 2,
+          "points": [
+            [
+              27.1,
+              32.400000000000006
+            ],
+            [
+              28.4,
+              32.400000000000006
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "points": [
+            [
+              28.4,
+              32.400000000000006
+            ],
+            [
+              28.3,
+              26.900000000000002
+            ],
+            [
+              27.4,
+              26.1
+            ],
+            [
+              25.564846,
+              25.43556
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "dab7adc35cc24151",
+      "type": "VIA",
+      "net": "3V18"
+    },
+    {
+      "id": "7d5264dfa30043a8",
+      "type": "VIA",
+      "net": "3V18"
+    },
+    {
+      "id": "595952f686774d38",
+      "type": "VIA",
+      "net": "3V18"
+    },
+    {
+      "id": "8d4c232fd3b44052",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "58e870b713844373",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "e800d3751340489e",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "b79050b9707949a0",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "a0a1837e21db449d",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "ff14394f18b24075",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "1ea0eca496e94a85",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "7f7229dc2a8948e8",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "bdb1061ebf024a8b",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "38168512545d4283",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "86980ecf36ab4910",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "75b8050be5274410",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "bdd538a78876409b",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "206e48b8b9754e08",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "662f1363577249f2",
+      "type": "LINE",
+      "net": "3V18"
+    },
+    {
+      "id": "8827ac3ead8042be",
+      "type": "LINE",
+      "net": "3V18"
+    }
+  ],
+  "validation_report": "drc-all-signals-connected.json",
+  "plans_note": "Initial planning paths; subsequent pad/via contact normalization and explicit reuse notes may adjust endpoints. The native PCB is authoritative."
+}

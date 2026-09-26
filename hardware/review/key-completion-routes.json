@@ -1,0 +1,234 @@
+{
+  "status": "Final native strict DRC after USB correction, ground pours and physical stackup: zero violations. Manufacturing release remains open.",
+  "plans": [
+    {
+      "net": "KEY_DOWN_N",
+      "width": 0.1524,
+      "vias": [
+        [
+          30.3,
+          37.6
+        ]
+      ],
+      "sections": [
+        {
+          "layer": 1,
+          "points": [
+            [
+              29.025148959999996,
+              35.97740074
+            ],
+            [
+              29.3,
+              37.1
+            ],
+            [
+              30.3,
+              37.6
+            ]
+          ]
+        },
+        {
+          "layer": 2,
+          "points": [
+            [
+              30.3,
+              37.6
+            ],
+            [
+              27.200000000000003,
+              36.7
+            ],
+            [
+              23.49875158,
+              36.22411856
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "net": "KEY_UP_N",
+      "width": 0.1524,
+      "vias": [
+        [
+          37.900000000000006,
+          32.1
+        ],
+        [
+          30.8,
+          29.9
+        ]
+      ],
+      "sections": [
+        {
+          "layer": 1,
+          "points": [
+            [
+              38.999955019999994,
+              32.85005876
+            ],
+            [
+              37.900000000000006,
+              32.1
+            ]
+          ]
+        },
+        {
+          "layer": 16,
+          "points": [
+            [
+              37.900000000000006,
+              32.1
+            ],
+            [
+              32.8,
+              31.9
+            ],
+            [
+              30.8,
+              29.9
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "points": [
+            [
+              30.8,
+              29.9
+            ],
+            [
+              29.700000000000003,
+              32.5
+            ],
+            [
+              28.375284879999995,
+              34.457045640000004
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "net": "KEY_RIGHT_N",
+      "width": 0.1524,
+      "vias": [
+        [
+          45.6,
+          26.700000000000003
+        ],
+        [
+          34.1,
+          30.8
+        ],
+        [
+          32.0,
+          32.9
+        ]
+      ],
+      "sections": [
+        {
+          "layer": 1,
+          "points": [
+            [
+              45.99995626,
+              25.850060059999997
+            ],
+            [
+              45.6,
+              26.700000000000003
+            ]
+          ]
+        },
+        {
+          "layer": 16,
+          "points": [
+            [
+              45.6,
+              26.700000000000003
+            ],
+            [
+              40.0,
+              30.4
+            ],
+            [
+              34.1,
+              30.8
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "points": [
+            [
+              34.1,
+              30.8
+            ],
+            [
+              33.2,
+              29.5
+            ],
+            [
+              32.5,
+              29.700000000000003
+            ],
+            [
+              32.0,
+              32.0
+            ],
+            [
+              32.0,
+              32.9
+            ]
+          ]
+        },
+        {
+          "layer": 16,
+          "points": [
+            [
+              32.0,
+              32.9
+            ],
+            [
+              31.1,
+              33.1
+            ],
+            [
+              30.3,
+              33.5
+            ],
+            [
+              29.9462698,
+              34.10754164
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "track_ids": [
+    "33db0010069b4edf",
+    "dc60d8b3bd394afa",
+    "9147b94ddb5b4d8d",
+    "0e90d7ec068b48cd",
+    "4ff4976aaab5428a",
+    "905906436d98404b",
+    "636ba129181243dc",
+    "2ca5931bd5834e93",
+    "099b769ea215408b",
+    "556e62f6f0124231",
+    "7b1afeeb1d1e4e1e",
+    "b18c820c407441c1",
+    "be581b30828e4fba",
+    "60c50c039bfd4a3e",
+    "435d846577024966",
+    "a90ceb1c18844adc",
+    "b73e1e411e564260",
+    "7d3f45e33173454c",
+    "58fb3cacb44d453a"
+  ],
+  "validation_report": "drc-all-signals-connected.json",
+  "plans_note": "Initial planning paths; subsequent pad/via contact normalization and explicit reuse notes may adjust endpoints. The native PCB is authoritative.",
+  "reuse_note": "DOWN via bb1d0707940a615a was removed; route reuses existing via e977b79c32e88bba at (30.61793978,37.3920258) mm instead of planned (30.3,37.6)."
+}

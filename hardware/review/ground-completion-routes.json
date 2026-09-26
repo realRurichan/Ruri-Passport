@@ -1,0 +1,116 @@
+{
+  "status": "Final native strict DRC after USB correction, ground pours and physical stackup: zero violations. Manufacturing release remains open.",
+  "plans": [
+    {
+      "net": "CHG_ISET",
+      "width": 0.1524,
+      "vias": [
+        [
+          45.35,
+          15.95
+        ]
+      ],
+      "sections": [
+        {
+          "layer": 1,
+          "points": [
+            [
+              46.25006498,
+              14.999997939999997
+            ],
+            [
+              45.6,
+              15.8
+            ],
+            [
+              45.35,
+              15.95
+            ]
+          ]
+        },
+        {
+          "layer": 16,
+          "points": [
+            [
+              45.35,
+              15.95
+            ],
+            [
+              49.41608354,
+              10.90038206
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "width": 0.1524,
+      "vias": [],
+      "sections": [
+        {
+          "layer": 1,
+          "points": [
+            [
+              44.999943019999996,
+              15.15004082
+            ],
+            [
+              44.8,
+              16.25
+            ],
+            [
+              44.999943019999996,
+              18.850058819999997
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "3eb8bda3b35e4531",
+      "type": "VIA",
+      "net": "CHG_ISET"
+    },
+    {
+      "id": "191a9b0923944c2c",
+      "type": "LINE",
+      "net": "CHG_ISET"
+    },
+    {
+      "id": "6397d5025db44e01",
+      "type": "LINE",
+      "net": "CHG_ISET"
+    },
+    {
+      "id": "3902eeeb922c47b9",
+      "type": "LINE",
+      "net": "CHG_ISET"
+    },
+    {
+      "id": "116f89d4506b4dd2",
+      "type": "LINE",
+      "net": "GND"
+    },
+    {
+      "id": "0c895157d2134e07",
+      "type": "LINE",
+      "net": "GND"
+    }
+  ],
+  "removed_objects": [
+    "09972058a3806504",
+    "43e934c6dc68d425",
+    "46a33ac295d9478c",
+    "4aabb46aac3c3b7d",
+    "4d20312d25afe475",
+    "627590d3834a44b6",
+    "8a2017b60d979cdb",
+    "93b9cfc06d920f34",
+    "e42c8e19bcd2c941",
+    "f3fdb7b3716d75db"
+  ],
+  "plans_note": "Initial planning paths; subsequent pad/via contact normalization and explicit reuse notes may adjust endpoints. The native PCB is authoritative."
+}

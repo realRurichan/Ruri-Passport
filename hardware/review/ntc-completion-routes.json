@@ -1,0 +1,100 @@
+{
+  "status": "Final native strict DRC after USB correction, ground pours and physical stackup: zero violations. Manufacturing release remains open.",
+  "plans": [
+    {
+      "net": "BAT_NTC",
+      "width": 0.1524,
+      "vias": [
+        [
+          44.3,
+          16.7
+        ]
+      ],
+      "sections": [
+        {
+          "layer": 1,
+          "points": [
+            [
+              45.50000298,
+              14.250189939999997
+            ],
+            [
+              44.25,
+              14.600000000000001
+            ],
+            [
+              43.55,
+              15.95
+            ],
+            [
+              43.7,
+              16.4
+            ],
+            [
+              44.3,
+              16.7
+            ]
+          ]
+        },
+        {
+          "layer": 2,
+          "points": [
+            [
+              44.3,
+              16.7
+            ],
+            [
+              44.75,
+              16.1
+            ],
+            [
+              44.708572,
+              15.044928
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "9271048a4d7b40c2",
+      "type": "VIA",
+      "net": "BAT_NTC"
+    },
+    {
+      "id": "191bec28f9474351",
+      "type": "LINE",
+      "net": "BAT_NTC"
+    },
+    {
+      "id": "14291a49bb804ae2",
+      "type": "LINE",
+      "net": "BAT_NTC"
+    },
+    {
+      "id": "6e75225e154d411a",
+      "type": "LINE",
+      "net": "BAT_NTC"
+    },
+    {
+      "id": "e0b2fff8be224963",
+      "type": "LINE",
+      "net": "BAT_NTC"
+    },
+    {
+      "id": "09b028c812bd418e",
+      "type": "LINE",
+      "net": "BAT_NTC"
+    },
+    {
+      "id": "95698ddc16324652",
+      "type": "LINE",
+      "net": "BAT_NTC"
+    }
+  ],
+  "validation_report": "drc-all-signals-connected.json",
+  "removed_ground_branch": "c31318ae7b2fc8b0",
+  "ground_branch_reconnection": "Pending ground pour; native DRC reports GND only.",
+  "plans_note": "Initial planning paths; subsequent pad/via contact normalization and explicit reuse notes may adjust endpoints. The native PCB is authoritative."
+}
