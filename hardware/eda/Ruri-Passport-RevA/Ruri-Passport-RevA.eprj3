@@ -3,7 +3,7 @@
   "owner_uuid": "2ff12631e020aa0043a40af248e72e79",
   "creator_uuid": "2ff12631e020aa0043a40af248e72e79",
   "created_at": "2026-09-26 14:23:21",
-  "updated_at": "2026-09-26 14:25:10",
+  "updated_at": "2026-09-26 15:04:22",
   "modifier_uuid": "2ff12631e020aa0043a40af248e72e79",
   "content": "",
   "archive": false,
@@ -44,6 +44,15 @@
         "source": "",
         "version": "1790403801388",
         "updateTime": 1790403801388
+      },
+      "ad993e34b1635da7": {
+        "uuid": "ad993e34b1635da7",
+        "title": "Display",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 2,
+        "source": "",
+        "version": "1790405621730",
+        "updateTime": 1790405621730
       }
     },
     "pcbs": {
