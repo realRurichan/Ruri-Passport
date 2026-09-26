@@ -1,0 +1,16 @@
+{
+  "status": "RUNNING_NO_SES_YET",
+  "pid": 42921,
+  "exec_session": 52793,
+  "input": "/private/tmp/ruri-escape-native.dsn",
+  "input_sha256": "3c72c912aeb14ee6fda42a58c45fd43f9a00ab4036add69ee509fb656e75c3d2",
+  "output": "/private/tmp/ruri-escape-native.ses",
+  "log": "/private/tmp/ruri-escape-native.log",
+  "version": "1.9.0",
+  "threads": 1,
+  "max_passes": 30,
+  "pre_route_native_clearance_errors": 0,
+  "pre_route_native_connection_errors": 449,
+  "manufacturing_released": false,
+  "monitoring": "4 JVM stack samples show routing/optimization code, not a DSN load stall. They do not establish completion or a decreasing unrouted count. No second routing run or layout edits while this process runs."
+}

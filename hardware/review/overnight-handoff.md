@@ -115,3 +115,5 @@ U2旧DeviceName定位：PCB嵌入DEVICE/META仍TCA9535，而Controls内已XL9535
 32段短引出线冷打开后原生DRC最初33项间距错误均为旧GND铺铜；重建所有地铜后间距错误0，连接错误449。完整证据pcb-escape-drc-20260927.json。epro已同步导出，几何核对185元件/408项/0错误/36NC。新原生DSN /private/tmp/ruri-escape-native-raw.dsn；prepare_routing.py --no-seeds输出 /private/tmp/ruri-escape-native.dsn（保留本次32段，未重放旧种子）。FreeRouting1.9.0单线程启动，session52793、PID42921，输出/private/tmp/ruri-escape-native.ses、日志同名前缀.log。不得同时改布局或重复启动。首个jstack确认已进入BatchAutorouter和走线优化，不是加载DSN阶段。尚无SES，不代表布通。
 
 报价预处理已新增prepare_quote_candidates.py、quote-candidates-20260927.csv/json；166实例，55项目料号/111历史未核准候选，不可下单。实时页面复核U10 C683779 ¥25.37/1颗库存5，J1 C506795 ¥6.06/1颗库存15827，J3 C161860库存0（¥1.492仅预订参考价），需解决替代采购。见live-price-check-20260927.json。
+
+检查点70159da已推送origin/main。新路由状态见freerouting-escape-20260927.json；截至启动约337秒，4次线程栈均在路由/优化算法，未见加载阶段卡死，尚无SES；不能据CPU忙判定改善。后续首先检查session52793/PID42921及输出文件，勿另开路由。结果出现后备份工程再导入SES，重建铜并查DRC与重复铜，保护ANT_A/B；无输出则继续诊断，不强称成品。POWER.md已纠正旧的“PCB尚未同步”文字。
