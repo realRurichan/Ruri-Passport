@@ -1,0 +1,8 @@
+{
+  "id": "counter",
+  "name": "随身计数器",
+  "version": "0.1.0",
+  "api_version": 1,
+  "entry": "main.lua",
+  "permissions": ["storage"]
+}

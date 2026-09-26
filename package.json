@@ -1,0 +1,13 @@
+{
+  "name": "ruri-passport-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Desktop validation of SD-card Lua apps; not ESP32 firmware",
+  "scripts": {
+    "start": "node simulator/cli.cjs",
+    "check": "node simulator/check.cjs",
+    "test": "node --test test/*.test.cjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "fengari": "0.1.5" }
+}
