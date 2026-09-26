@@ -2,11 +2,11 @@
 
 让用户用 AI 创作掌上应用，把多个应用放进 SD 卡，在设备上启动和切换。
 
-**状态：早期原型，当前优先硬件设计。当前可运行的是电脑端 Lua 应用模拟器，不是 ESP32 固件；尚无可生产的原理图、PCB、BOM 或 Gerber。**
+**状态：早期原型，当前优先硬件设计。当前可运行的是电脑端 Lua 应用模拟器，不是 ESP32 固件；已完成原理图和 PCB 工程，并导出最新 Gerber、BOM、CPL；尚未生产放行。**
 
 本项目受 [FoloToy AI Passport](https://ai-passport.folotoy.cn/) 启发，为独立项目，与 FoloToy 无隶属关系。没有复制其固件或硬件文件，不承诺兼容其社区固件。
 
-硬件草稿见 [hardware](hardware/README.md)，包含嘉立创 EDA 专业版完整原理图、88 × 135 mm 四层 PCB 及 Gerber 审核草稿。全板已布线，原生严格 DRC 为 0；装配与供料审核仍有待修项，不能下单。首轮在线报价明显超过 ¥200/套目标，见 [审核与报价](hardware/review/assembly-quote-20260926.md)。软件原型暂时保留，后续再继续开发。
+硬件草稿见 [hardware](hardware/README.md)，包含嘉立创 EDA 专业版完整原理图、88 × 135 mm 四层 PCB 及 Gerber 审核草稿。全板已布线，原生严格 DRC 为 0；装配与供料审核仍有待修项，不能下单。第二轮预报价仍明显超过 ¥200/套目标，见 [审核与报价](hardware/review/assembly-quote-round2-20260926.md)。最新制造文件见 [manufacturing/latest](hardware/manufacturing/latest/README.md)，装配核对图见 [1:1 PDF](hardware/mechanical/screen-fit-check-1to1.pdf)。软件原型暂时保留，后续再继续开发。
 
 ## 当前实现
 

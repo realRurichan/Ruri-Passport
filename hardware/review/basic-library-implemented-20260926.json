@@ -1,0 +1,74 @@
+{
+  "updates": {
+    "R22": {
+      "Name": "2.2k 1%",
+      "Manufacturer Part": "0603WAF2201T5E",
+      "Supplier Part": "C4190",
+      "Manufacturer": "UNI-ROYAL",
+      "Supplier": "LCSC"
+    },
+    "R23": {
+      "Name": "4.7k 1%",
+      "Manufacturer Part": "0603WAF4701T5E",
+      "Supplier Part": "C23162",
+      "Manufacturer": "UNI-ROYAL",
+      "Supplier": "LCSC"
+    },
+    "J1": {
+      "Name": "FH12A-40S-0.5SH(55)",
+      "Manufacturer Part": "FH12A-40S-0.5SH(55)",
+      "Supplier Part": "C506795",
+      "Manufacturer": "Hirose",
+      "Supplier": "LCSC"
+    }
+  },
+  "native_changes": {
+    "Mainboard.epcb2": {
+      "edited_records": 3,
+      "devices": [
+        "1eacfb7558084f7a",
+        "696c6b5fae50d83f",
+        "43d74e0c500bbb1a"
+      ]
+    },
+    "Power.esch2": {
+      "edited_records": 4,
+      "devices": [
+        "696c6b5fae50d83f",
+        "43d74e0c500bbb1a"
+      ]
+    },
+    "Controls.esch2": {
+      "edited_records": 0,
+      "devices": []
+    },
+    "Audio_Storage.esch2": {
+      "edited_records": 0,
+      "devices": []
+    },
+    "Display.esch2": {
+      "edited_records": 2,
+      "devices": [
+        "1eacfb7558084f7a"
+      ]
+    },
+    "Core.esch2": {
+      "edited_records": 0,
+      "devices": []
+    },
+    "RF_Service.esch2": {
+      "edited_records": 0,
+      "devices": []
+    },
+    "NFC.esch2": {
+      "edited_records": 0,
+      "devices": []
+    },
+    "Optics.esch2": {
+      "edited_records": 0,
+      "devices": []
+    }
+  },
+  "manufacturing_released": false,
+  "pcb_editor_sync": "pending: setDocumentSource rejected native format"
+}

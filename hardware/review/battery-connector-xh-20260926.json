@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-26",
+  "connector": "JST S3B-XH-SM4-TB(LF)(SN)",
+  "supplier_part": "C161860",
+  "mating_housing": "XHP-3",
+  "pitch_mm": 2.5,
+  "rating_A": 3,
+  "rating_condition": "AWG22 power wires",
+  "position_mm": [
+    7,
+    60.5
+  ],
+  "rotation_deg": 0,
+  "pin_nets": {
+    "1": "VBAT",
+    "2": "BAT_NTC",
+    "3": "GND",
+    "4": "GND",
+    "5": "GND"
+  },
+  "strict_drc_errors": 0,
+  "gerber_files": 17,
+  "sha256": {
+    "hardware/manufacturing/latest/Ruri-Passport-RevA-Battery-XH-20260926.zip": "ee983bd0fdc08dd0f5f8ba217bd818d4f2287b5e4147cd06e8abd284917b84f3",
+    "hardware/eda/Ruri-Passport-RevA/pcb/Mainboard.epcb2": "515f942245015a0b702eb241b191b277ed01075a7a601ae31c90680706d996ce",
+    "hardware/eda/Ruri-Passport-RevA/sch/Mainboard/Power.esch2": "9a4454afd1eba92b76d74f7c0cc4a3e16867649c2bf1edc0f76de4d3209c5f6b"
+  },
+  "release_status": "engineering checkpoint; assembly and sourcing checks remain"
+}

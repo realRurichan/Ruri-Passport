@@ -1,6 +1,6 @@
 {
-  "archive": "hardware/manufacturing/dfm-draft-20260926/Ruri-Passport-RevA-D4-DFM-DRAFT-20260926.zip",
-  "sha256": "28e3f946535377d49c7533dfa76a90717c97bf57868998abc7d1a80b86eff1dc",
+  "archive": "hardware/manufacturing/latest/Ruri-Passport-RevA-Battery-XH-20260926.zip",
+  "sha256": "ee983bd0fdc08dd0f5f8ba217bd818d4f2287b5e4147cd06e8abd284917b84f3",
   "checks": [
     {
       "check": "Four nonempty copper layers exported",
@@ -102,8 +102,8 @@
       2.2
     ]
   ],
-  "pth_round_hits": 366,
-  "via_reference_hits": 366,
+  "pth_round_hits": 372,
+  "via_reference_hits": 372,
   "usb_npth_copper_clearance_mm": 0.17509999000199944,
   "manufacturing_released": false,
   "limitations": [

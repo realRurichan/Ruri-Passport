@@ -1,0 +1,479 @@
+{
+  "date": "2026-09-26",
+  "policy": "全量基础库优先；非必要不用扩展料。必要性必须逐项写明并以国内嘉立创当前分类确认。",
+  "complete": false,
+  "manufacturing_released": false,
+  "baseline_rows": 57,
+  "baseline_basic_rows": 23,
+  "baseline_extended_rows": 34,
+  "candidate_basic_switch": "C318884",
+  "candidate_quote_parts_cny": "429.80",
+  "candidate_quote_smt_total_cny": "1096.62",
+  "quote_caution": "仅更换五向键的试算，CAD尚未改引脚网络；不是全量基础库优化后的最终报价。",
+  "verified_basic_candidates": {
+    "C318884": "TS-1187A-B-A-B, 5.1x5.1x1.5mm, 单价0.126",
+    "C28323": "CL21B105KBFNNNE, 0805, 1uF,50V,X7R,0.244",
+    "C59461": "CL10A226MQ8NRNC,0603,22uF,6.3V,0.191",
+    "C45783": "CL21A226MAQNNNE,0805,22uF,25V,1.354",
+    "C17540": "0805W8F2000T5E,200ohm,1%,125mW,0.0383"
+  },
+  "rows": [
+    {
+      "designators": "R9,R10,R11,R12,R13,R14,R24,R25,R28,R31,R43,R49,R55,R59",
+      "current_cad_mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R32,R33,R40,R41,R42",
+      "current_cad_mpn": "0603WAF330JT5E",
+      "lcsc": "C23140",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "C3,C9,C15,C16",
+      "current_cad_mpn": "CL10B105KO8NNNC",
+      "lcsc": "C59782",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "基础库C28323（0805 1uF X7R 50V）可继续评估；C29936国内基础库查询无结果。应评估改0805或放宽温度介质规格，不能只因现有0603封装保留扩展料。"
+    },
+    {
+      "designators": "IR1",
+      "current_cad_mpn": "IRM-H638T/TR2",
+      "lcsc": "C91447",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "R1,R4,R5,R8,R15,R16,R17,R18,R19,R56",
+      "current_cad_mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "C1,C10,C11,C12,C18,C20",
+      "current_cad_mpn": "CL10A106KP8NNNC",
+      "lcsc": "C19702",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "U9",
+      "current_cad_mpn": "TLV9001IDBVR",
+      "lcsc": "C398363",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "C33,C34,C35,C36",
+      "current_cad_mpn": "CL10A225KO8NNNC",
+      "lcsc": "C23630",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "C2,C6,C8,C19,C21,C22,C23,C25,C26,C30,C37",
+      "current_cad_mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "Y1",
+      "current_cad_mpn": "XRCGB27M120F3M10R0",
+      "lcsc": "C338245",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "NFC匹配/晶振或模拟稳定性元件，需验证C0G、容差、频率、Q/SRF与电流，不能用平台近似基础库结果替代。继续检索基础库等效值与串并联方案；必要性尚未最终签核。"
+    },
+    {
+      "designators": "C44,C45",
+      "current_cad_mpn": "CC0603GRNPO9BN201",
+      "lcsc": "C519477",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "NFC匹配/晶振或模拟稳定性元件，需验证C0G、容差、频率、Q/SRF与电流，不能用平台近似基础库结果替代。继续检索基础库等效值与串并联方案；必要性尚未最终签核。"
+    },
+    {
+      "designators": "C38,C39",
+      "current_cad_mpn": "CC0603FRNPO9BN160",
+      "lcsc": "C519489",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "NFC匹配/晶振或模拟稳定性元件，需验证C0G、容差、频率、Q/SRF与电流，不能用平台近似基础库结果替代。继续检索基础库等效值与串并联方案；必要性尚未最终签核。"
+    },
+    {
+      "designators": "C13,C14",
+      "current_cad_mpn": "HGC0603R5226M100NTHJ",
+      "lcsc": "C7432770",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "基础库C59461为0603 22uF 6.3V，C45783为0805 22uF 25V；须核对3.18V偏压下有效电容及环路要求，再决定换料/换封装。不是已批准扩展料例外。"
+    },
+    {
+      "designators": "C7,C24,C29,C31",
+      "current_cad_mpn": "CL10A475KO8NNNC",
+      "lcsc": "C19666",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "U2",
+      "current_cad_mpn": "TCA9535PWR",
+      "lcsc": "C130204",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "U8",
+      "current_cad_mpn": "PN7160A1HN/C100Y",
+      "lcsc": "C3303790",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "承担ESP32-S3 Wi-Fi/BLE、NFC卡模拟、数字音频输入/输出需求。基础库ESP32、NFC、I2S查询无可用结果；关键功能保留，仍继续查同功能等效料。"
+    },
+    {
+      "designators": "R45",
+      "current_cad_mpn": "0603WAF3303T5E",
+      "lcsc": "C23137",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R23",
+      "current_cad_mpn": "FRC0603F3481TS",
+      "lcsc": "C2998120",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "优先改基础库标准阻值/串并联或改0805。R46/R47基础库C17540满足200Ω1%125mW但需改0805；R26/R27分压改变必须重算3.18V上下限；R22/R23必须重算充电及USB限流。当前扩展料保留仅为待改基线。"
+    },
+    {
+      "designators": "R48,R53,R54",
+      "current_cad_mpn": "0603WAF1001T5E",
+      "lcsc": "C21190",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "J4",
+      "current_cad_mpn": "DM3AT-SF-PEJM5",
+      "lcsc": "C114218",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "国内基础库TF、USB查询无结果；40pin上接触FPC接口必须匹配屏幕。连接器保留接口功能，但不限进口品牌，继续筛选便宜可机贴料。"
+    },
+    {
+      "designators": "C28,C46,C47",
+      "current_cad_mpn": "CC0603FRNPO9BN102",
+      "lcsc": "C309468",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "NFC匹配/晶振或模拟稳定性元件，需验证C0G、容差、频率、Q/SRF与电流，不能用平台近似基础库结果替代。继续检索基础库等效值与串并联方案；必要性尚未最终签核。"
+    },
+    {
+      "designators": "U5",
+      "current_cad_mpn": "TPS22919DCKR",
+      "lcsc": "C2149796",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "U3",
+      "current_cad_mpn": "BQ24074RGTR",
+      "lcsc": "C54313",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "D1,D2,D3,D5,D6,D7",
+      "current_cad_mpn": "TPD2EUSB30DRTR",
+      "lcsc": "C97502",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "R34,R35,R36,R37,R38,R39,R51",
+      "current_cad_mpn": "0603WAF4702T5E",
+      "lcsc": "C25819",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "C40,C41",
+      "current_cad_mpn": "GCM1885C2A751FA16J",
+      "lcsc": "C17578242",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "NFC匹配/晶振或模拟稳定性元件，需验证C0G、容差、频率、Q/SRF与电流，不能用平台近似基础库结果替代。继续检索基础库等效值与串并联方案；必要性尚未最终签核。"
+    },
+    {
+      "designators": "R22",
+      "current_cad_mpn": "0603WAF1781T5E",
+      "lcsc": "C22849",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "优先改基础库标准阻值/串并联或改0805。R46/R47基础库C17540满足200Ω1%125mW但需改0805；R26/R27分压改变必须重算3.18V上下限；R22/R23必须重算充电及USB限流。当前扩展料保留仅为待改基线。"
+    },
+    {
+      "designators": "R57",
+      "current_cad_mpn": "0603WAF100KT5E",
+      "lcsc": "C22936",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R44",
+      "current_cad_mpn": "0603WAF1004T5E",
+      "lcsc": "C22935",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "C27,C32",
+      "current_cad_mpn": "CL10A105KB8NNNC",
+      "lcsc": "C15849",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R27",
+      "current_cad_mpn": "RT0603BRD0710KL",
+      "lcsc": "C95204",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "优先改基础库标准阻值/串并联或改0805。R46/R47基础库C17540满足200Ω1%125mW但需改0805；R26/R27分压改变必须重算3.18V上下限；R22/R23必须重算充电及USB限流。当前扩展料保留仅为待改基线。"
+    },
+    {
+      "designators": "SW1,SW2,SW3,SW4,SW5",
+      "current_cad_mpn": "TS-1187A-A-I-B",
+      "lcsc": "C21262538",
+      "domestic_library": "扩展库",
+      "decision": "REPLACE_PENDING_PIN_MAP",
+      "reason": "基础库现货，1.5mm高、160gf。原厂图内部A-B、C-D短接；当前PCB焊盘网络按左右列分配，不能直接替换；必须修正封装引脚对应与相关走线。报价已做候选试算，CAD尚未切换。",
+      "candidate": "C318884 / TS-1187A-B-A-B"
+    },
+    {
+      "designators": "D4",
+      "current_cad_mpn": "IR91-21C/TR10",
+      "lcsc": "C108185",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "Q1,Q2",
+      "current_cad_mpn": "AO3400A",
+      "lcsc": "C20917",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "J2",
+      "current_cad_mpn": "USB4105-GF-A",
+      "lcsc": "C3020560",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "国内基础库TF、USB查询无结果；40pin上接触FPC接口必须匹配屏幕。连接器保留接口功能，但不限进口品牌，继续筛选便宜可机贴料。"
+    },
+    {
+      "designators": "R58",
+      "current_cad_mpn": "0603WAF0000T5E",
+      "lcsc": "C21189",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R60,R61,R66,R67",
+      "current_cad_mpn": "1206W4F100KT5E",
+      "lcsc": "C17928",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "U1",
+      "current_cad_mpn": "ESP32-S3-WROOM-1-N16R8",
+      "lcsc": "C2913202",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "承担ESP32-S3 Wi-Fi/BLE、NFC卡模拟、数字音频输入/输出需求。基础库ESP32、NFC、I2S查询无可用结果；关键功能保留，仍继续查同功能等效料。"
+    },
+    {
+      "designators": "J3",
+      "current_cad_mpn": "B3B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C160353",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "R2,R3",
+      "current_cad_mpn": "0603WAF220JT5E",
+      "lcsc": "C23345",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R62,R63",
+      "current_cad_mpn": "0603WAF2201T5E",
+      "lcsc": "C4190",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "SW6",
+      "current_cad_mpn": "B3U-3000P",
+      "lcsc": "C963349",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "U7",
+      "current_cad_mpn": "MAX98357AETE+T",
+      "lcsc": "C910544",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "承担ESP32-S3 Wi-Fi/BLE、NFC卡模拟、数字音频输入/输出需求。基础库ESP32、NFC、I2S查询无可用结果；关键功能保留，仍继续查同功能等效料。"
+    },
+    {
+      "designators": "R50",
+      "current_cad_mpn": "0603WAF470JT5E",
+      "lcsc": "C23182",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "J5",
+      "current_cad_mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C295747",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "R6,R7",
+      "current_cad_mpn": "0603WAF4701T5E",
+      "lcsc": "C23162",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "MIC1",
+      "current_cad_mpn": "SPH0645LM4H-B",
+      "lcsc": "C45337831",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "承担ESP32-S3 Wi-Fi/BLE、NFC卡模拟、数字音频输入/输出需求。基础库ESP32、NFC、I2S查询无可用结果；关键功能保留，仍继续查同功能等效料。"
+    },
+    {
+      "designators": "R26",
+      "current_cad_mpn": "RT0603BRD0753K6L",
+      "lcsc": "C861467",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "优先改基础库标准阻值/串并联或改0805。R46/R47基础库C17540满足200Ω1%125mW但需改0805；R26/R27分压改变必须重算3.18V上下限；R22/R23必须重算充电及USB限流。当前扩展料保留仅为待改基线。"
+    },
+    {
+      "designators": "R46,R47",
+      "current_cad_mpn": "TNPW0603200RBEEA",
+      "lcsc": "C844266",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "优先改基础库标准阻值/串并联或改0805。R46/R47基础库C17540满足200Ω1%125mW但需改0805；R26/R27分压改变必须重算3.18V上下限；R22/R23必须重算充电及USB限流。当前扩展料保留仅为待改基线。"
+    },
+    {
+      "designators": "U4",
+      "current_cad_mpn": "TPS63802DLAR",
+      "lcsc": "C2845237",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "L2,L3",
+      "current_cad_mpn": "LQW18CNR16J00D",
+      "lcsc": "C437367",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "NFC匹配/晶振或模拟稳定性元件，需验证C0G、容差、频率、Q/SRF与电流，不能用平台近似基础库结果替代。继续检索基础库等效值与串并联方案；必要性尚未最终签核。"
+    },
+    {
+      "designators": "R20,R21",
+      "current_cad_mpn": "0603WAF5101T5E",
+      "lcsc": "C23186",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R52",
+      "current_cad_mpn": "0603WAF2002T5E",
+      "lcsc": "C4184",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "R29",
+      "current_cad_mpn": "0603WAF1000T5E",
+      "lcsc": "C22775",
+      "domestic_library": "基础库",
+      "decision": "KEEP_BASIC",
+      "reason": "已在国内嘉立创当前报价页面核实为基础库，保留并统一相同料号。"
+    },
+    {
+      "designators": "L1",
+      "current_cad_mpn": "XFL4015-471MEC",
+      "lcsc": "C18221164",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "尚未证明必须用扩展库；需继续筛选基础库等效器件或修改电路，不能因为原设计已有此料号就豁免。"
+    },
+    {
+      "designators": "C42,C43",
+      "current_cad_mpn": "0603N620G500CT",
+      "lcsc": "C296067",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "NFC匹配/晶振或模拟稳定性元件，需验证C0G、容差、频率、Q/SRF与电流，不能用平台近似基础库结果替代。继续检索基础库等效值与串并联方案；必要性尚未最终签核。"
+    },
+    {
+      "designators": "J1",
+      "current_cad_mpn": "FH12A-40S-0.5SH(55)",
+      "lcsc": "C506795",
+      "domestic_library": "扩展库",
+      "decision": "REVIEW_REQUIRED",
+      "reason": "国内基础库TF、USB查询无结果；40pin上接触FPC接口必须匹配屏幕。连接器保留接口功能，但不限进口品牌，继续筛选便宜可机贴料。"
+    }
+  ]
+}
