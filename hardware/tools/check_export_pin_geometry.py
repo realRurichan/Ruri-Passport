@@ -8,7 +8,7 @@ from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('archive');p.add_argument('--report');a=p.parse_args()
 s=Path(__file__).with_name('check_native_netlist.py').read_text();scope={}
 exec(s[s.index('expect={}'):s.index('errors=[];count=0')],{},scope)
-expected=scope['expect'];errors=[];checks=[];unconnected=[];seen=set()
+expected=scope['expect'];errors=[];checks=[];unconnected=[];seen=set();nc_marked=[]
 def segment(p,a,b):
  return abs((p[0]-a[0])*(b[1]-a[1])-(p[1]-a[1])*(b[0]-a[0]))<1e-6 and min(a[0],b[0])-1e-6<=p[0]<=max(a[0],b[0])+1e-6 and min(a[1],b[1])-1e-6<=p[1]<=max(a[1],b[1])+1e-6
 with zipfile.ZipFile(a.archive) as z:
@@ -34,12 +34,15 @@ with zipfile.ZipFile(a.archive) as z:
     if len(nets)>1:errors.append(f'{ref}.{num}: conflicting nets {sorted(nets)}')
     net=next(iter(nets)) if len(nets)==1 else '';actual[num]=net
     if not nets:unconnected.append({'ref':ref,'pin':num,'name':name})
+    if attrs.get((c[1]+pin[1],'NO_CONNECT'))=='yes':
+     nc_marked.append({'ref':ref,'pin':num})
+     if nets:errors.append(f'{ref}.{num}: NC marker on connected net {net}')
    if ref in expected:
     for pn,net in expected[ref].items():
      got=actual.get(str(pn),'<missing pin>');checks.append({'ref':ref,'pin':str(pn),'expected':net,'actual':got})
      if got!=net:errors.append(f'{ref}.{pn}: expected {net!r}, got {got!r}')
  for ref in expected.keys()-seen:errors.append(ref+': missing')
-report={'status':'supplementary geometry check only; NOT fabrication release','archive':str(Path(a.archive).resolve()),'component_count':len(seen),'checked_pin_count':len(checks),'errors':errors,'unconnected_pins':unconnected,'checks':checks}
+report={'status':'supplementary geometry check only; NOT fabrication release','archive':str(Path(a.archive).resolve()),'component_count':len(seen),'checked_pin_count':len(checks),'errors':errors,'unconnected_pins':unconnected,'nc_marked_pins':nc_marked,'checks':checks}
 if a.report:Path(a.report).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print(f'{len(seen)} components, {len(checks)} checked pins, {len(errors)} errors, {len(unconnected)} unconnected pins')
 for e in errors:print(e)

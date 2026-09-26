@@ -68,8 +68,14 @@ for ref in ['Q12','Q13']:expect[ref]={1:'MAIN_GATE',2:'VSYS',3:'VSYS_RUN'}
 expect['Q14']={1:'BAT_ADC_GATE',2:'VBAT',3:'VBAT_ADC_SW'}
 expect['Q15']={1:'PWR_EN',2:'GND',3:'BAT_ADC_GATE'}
 for ref,nets in {'C60':('VSYS','GND'),'C61':('PWR_ONT','GND'),'C62':('PWR_PDT','GND'),'C63':('VSYS','MAIN_GATE'),'R70':('3V18','PWR_KILL_N'),'R71':('PWR_KILL','GND'),'R72':('VSYS','PWR_EN'),'R73':('MAIN_GATE','MAIN_SWITCH_D'),'R74':('VSYS','MAIN_GATE'),'R75':('VBAT','BAT_ADC_GATE'),'R76':('VSYS_RUN','GND')}.items():expect[ref]=dict(enumerate(nets,1))
+# 2026-09-27: direct open-drain KILL control; unnecessary inverter removed.
+expect['U1'][23]='PWR_KILL_N'
+expect.pop('Q10')
+expect.pop('R71')
 errors=[];count=0
 refs=[x['props']['Designator'] for x in j['components'].values()]
+for ref in ['Q10','R71']:
+ if ref in c:errors.append(ref+': obsolete KILL inverter still present')
 if len(refs)!=len(set(refs)):errors.append('Duplicate component designators')
 for ref,pins in expect.items():
  if ref not in c:errors.append(f'{ref}: missing');continue

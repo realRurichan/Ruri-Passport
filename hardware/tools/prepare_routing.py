@@ -10,6 +10,8 @@ p=argparse.ArgumentParser()
 p.add_argument('input',type=Path); p.add_argument('output',type=Path)
 p.add_argument('--routing-tools',type=Path,required=True)
 p.add_argument('--fresh-wiring',action='store_true')
+p.add_argument('--no-seeds',action='store_true',help='Preserve native wiring without replaying historical routing seeds')
+p.add_argument('--seeds-file',type=Path,help='Explicit reviewed seed plan; replaces the historical seed file')
 a=p.parse_args(); root=Path(__file__).resolve().parents[1]
 subprocess.run([sys.executable,str(a.routing_tools/'dsn_rewrite.py'),str(a.input),
     str(a.output),'--config',str(root/'design/routing-draft.json'),'--min-classes','100'],check=True)
@@ -72,7 +74,9 @@ for h,c in pcb:
             obstacles.append(f'    (keepout "" (circle {layer} {2*(r+.15/.0254):.5f} {gx:.5f} {gy:.5f}))')
 # Insert immediately after layer declarations, before the first boundary.
 s=s.replace('    (boundary', '\n'.join(obstacles)+'\n    (boundary',1)
-seed=json.loads((root/'design/critical-routing.json').read_text()); wiring=[]
+if a.no_seeds and a.seeds_file:
+    p.error('--no-seeds and --seeds-file are mutually exclusive')
+seed={'paths':[], 'vias':[]} if a.no_seeds else json.loads((a.seeds_file or root/'design/critical-routing.json').read_text()); wiring=[]
 # 0.50/0.30 mm fanout vias stay within the native board's existing via rules.
 assert '(padstack viaSmall' not in s
 s=s.replace('  (library\n','  (library\n    (padstack viaSmall\n'+
@@ -81,7 +85,7 @@ s=s.replace('(via via0 via1','(via via0 via1 viaSmall',1)
 for path in seed['paths']:
     coords=' '.join(f'{q/.0254:.5f}' for pt in path['points'] for q in pt)
     wiring.append(f'    (wire (path {path["layer"]} {path["width"]/.0254:.5f} {coords}) (net {path["net"]}) (type protect))')
-for via in seed['vias']:
+for via in seed.get('vias',[]):
     wiring.append(f'    (via {via.get("padstack","via0")} {via["x"]/.0254:.5f} {via["y"]/.0254:.5f} (net {via["net"]}) (type protect))')
 assert s.count('(wiring')==1
 s=s.replace('  (wiring\n','  (wiring\n'+'\n'.join(wiring)+'\n',1)

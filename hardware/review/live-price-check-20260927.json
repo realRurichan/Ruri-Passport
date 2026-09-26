@@ -1,0 +1,40 @@
+{
+  "observed_date": "2026-09-27",
+  "source": "rendered JLC SMT product pages after loading",
+  "rows": [
+    {
+      "ref": "U10",
+      "lcsc": "C683779",
+      "mpn": "LTC2954CDDB-1#TRPBF",
+      "library": "extended",
+      "stock": 5,
+      "unit_cny": 25.37,
+      "min_quantity": 1,
+      "price_kind": "live_in_stock_tier",
+      "source": "https://www.jlc-smt.com/lcsc/detail/C683779.html"
+    },
+    {
+      "ref": "J1",
+      "lcsc": "C506795",
+      "mpn": "FH12A-40S-0.5SH(55)",
+      "library": "extended",
+      "stock": 15827,
+      "unit_cny": 6.06,
+      "min_quantity": 1,
+      "price_kind": "live_in_stock_tier",
+      "source": "https://www.jlc-smt.com/lcsc/detail/C506795.html"
+    },
+    {
+      "ref": "J3",
+      "lcsc": "C161860",
+      "mpn": "S3B-XH-SM4-TB(LF)(SN)",
+      "library": "extended",
+      "stock": 0,
+      "unit_cny": 1.492,
+      "min_quantity": null,
+      "price_kind": "reservation_reference_not_stock_quote",
+      "source": "https://www.jlc-smt.com/lcsc/detail/C161860.html"
+    }
+  ],
+  "full_assembly_quote": false
+}

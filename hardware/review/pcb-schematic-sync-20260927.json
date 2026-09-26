@@ -1,0 +1,6 @@
+{
+  "method": "native PCB PAD_NET/footprint pads vs native schematic ENET; not a routing/DRC check",
+  "components": 185,
+  "pin_net_checks": 616,
+  "errors": []
+}

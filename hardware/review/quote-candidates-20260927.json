@@ -1,0 +1,62 @@
+{
+  "populated_components": 166,
+  "mapping_counts": {
+    "HISTORICAL_UNQUALIFIED_MATCH": 111,
+    "CURRENT_PROJECT_FIELD": 55
+  },
+  "unpriced_components": [
+    "J1",
+    "J3",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "U2",
+    "U10"
+  ],
+  "changed_historical_matches": [
+    {
+      "designator": "C3",
+      "current_lcsc": "C15849",
+      "historic_candidate_superseded": "C59782"
+    },
+    {
+      "designator": "C9",
+      "current_lcsc": "C15849",
+      "historic_candidate_superseded": "C59782"
+    },
+    {
+      "designator": "C15",
+      "current_lcsc": "C15849",
+      "historic_candidate_superseded": "C59782"
+    },
+    {
+      "designator": "C16",
+      "current_lcsc": "C15849",
+      "historic_candidate_superseded": "C59782"
+    },
+    {
+      "designator": "J3",
+      "current_lcsc": "C161860",
+      "historic_candidate_superseded": "C160353"
+    },
+    {
+      "designator": "R22",
+      "current_lcsc": "C4190",
+      "historic_candidate_superseded": "C22849"
+    },
+    {
+      "designator": "R23",
+      "current_lcsc": "C23162",
+      "historic_candidate_superseded": "C2998120"
+    },
+    {
+      "designator": "U2",
+      "current_lcsc": "C561273",
+      "historic_candidate_superseded": "C130204"
+    }
+  ],
+  "manufacturing_released": false,
+  "warning": "No total: historical candidate prices exclude setup, attrition, PCB and new/unpriced parts. Candidates are not qualified purchase selections."
+}

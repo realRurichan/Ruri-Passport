@@ -1,0 +1,32 @@
+{
+  "status": "STOPPED AT USER REQUEST - NO SES PRODUCED - NOT FOR FABRICATION",
+  "engine": "FreeRouting 1.9.0",
+  "mode": "fresh routing; antenna copper preserved",
+  "threads": 1,
+  "max_passes": 30,
+  "native_components": 185,
+  "placement_screening_findings": 0,
+  "schematic_pin_checks": 408,
+  "schematic_pin_errors": 0,
+  "retained_antenna_tracks": 17,
+  "retained_antenna_vias": 3,
+  "inputs": {
+    "ruri-hardoff-fresh-raw.dsn": "621a21736dfe1bdf9d4103daa0162ec5fb84b6a1dd56ecdb16bd53000eb1d291",
+    "ruri-hardoff-fresh.dsn": "4cff6374610a4d9a8e2825e29e65f1659334995a6062f48eb9f65fc12c0956aa"
+  },
+  "constraints": [
+    "Inner1 reserved ground reference plane",
+    "0.16mm router clearance",
+    "0.31mm intended copper-to-outline minimum",
+    "mounting and antenna keepouts",
+    "VSYS_RUN trunk 0.8mm; fine-pitch escape/manual power-loop review pending"
+  ],
+  "operator_policy": "Do not interrupt while improving; if pass limit ends with improvements, inspect and continue. Stop only on demonstrated stall or error.",
+  "discarded_old_routing": {
+    "tracks": 2000,
+    "vias": 271
+  },
+  "exit_code": 130,
+  "output_session_available": false,
+  "next_step": "Diagnose pin escape and routing channels before changing input; do not rerun unchanged input."
+}
