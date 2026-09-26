@@ -92,6 +92,9 @@ with zipfile.ZipFile(args.zip) as z:
     outline = read('Gerber_BoardOutlineLayer.GKO')
     check('88 x 135 mm closed rectangular outline present',
           'G01X0Y0D02*\nG01X0Y13500000D01*\nG01X8800000Y13500000D01*\nG01X8800000Y0D01*\nG01X0Y0D01*' in outline)
+    check('D4 cutout: diameter 3.30 mm, centered at (82,127)',
+          'G01X8035000Y12700000D02*\nG02X8365000Y12700000I165000J0D01*' in outline
+          and 'G02X8035000Y12700000I-165000J0D01*' in outline)
 
 report = {
     'archive': args.zip, 'sha256': hashlib.sha256(Path(args.zip).read_bytes()).hexdigest(),
@@ -103,7 +106,7 @@ report = {
         'This checks selected exported geometry, not all clearances or connectivity.',
         'USB nominal 0.1751 mm NPTH clearance still requires JLC DFM acceptance.',
         'Combined PTH and separate via-reference drill overlap; do not count/drill them twice.',
-        'GKO additionally carries the IR LED footprint circular cutout near (82.1435,127), diameter 2.2 mm; mechanical qualification remains open.',
+        'GKO carries D4 circular cutout at (82,127), diameter 3.3 mm; assembly qualification remains open.',
         'Paste geometry correspondence does not approve stencil thickness or solder volume.'
     ]
 }

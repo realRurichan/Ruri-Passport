@@ -1,0 +1,116 @@
+{
+  "archive": "hardware/manufacturing/dfm-draft-20260926/Ruri-Passport-RevA-D4-DFM-DRAFT-20260926.zip",
+  "sha256": "28e3f946535377d49c7533dfa76a90717c97bf57868998abc7d1a80b86eff1dc",
+  "checks": [
+    {
+      "check": "Four nonempty copper layers exported",
+      "passed": true
+    },
+    {
+      "check": "Seven NPTH drill hits, correct diameters and positions",
+      "passed": true
+    },
+    {
+      "check": "Four USB plated slots: 0.60 mm width, 1.70/1.40 mm overall length",
+      "passed": true
+    },
+    {
+      "check": "Separate via drill is a subset of combined PTH drill",
+      "passed": true
+    },
+    {
+      "check": "Sixteen USB copper pads: 0.30 x 1.15 mm at y=7.355",
+      "passed": true
+    },
+    {
+      "check": "Twelve USB signal paste regions match target land pattern",
+      "passed": true
+    },
+    {
+      "check": "88 x 135 mm closed rectangular outline present",
+      "passed": true
+    },
+    {
+      "check": "D4 cutout: diameter 3.30 mm, centered at (82,127)",
+      "passed": true
+    }
+  ],
+  "npth_hits": [
+    [
+      0.4,
+      82.786,
+      110.0
+    ],
+    [
+      0.65,
+      46.89,
+      6.28
+    ],
+    [
+      0.65,
+      41.11,
+      6.28
+    ],
+    [
+      2.2,
+      3.0,
+      132.0
+    ],
+    [
+      2.2,
+      84.5,
+      132.0
+    ],
+    [
+      2.2,
+      3.5,
+      38.0
+    ],
+    [
+      2.2,
+      84.5,
+      50.0
+    ]
+  ],
+  "usb_slots": [
+    [
+      0.6,
+      39.68,
+      7.33,
+      39.68,
+      6.23
+    ],
+    [
+      0.6,
+      48.32,
+      7.33,
+      48.32,
+      6.23
+    ],
+    [
+      0.6,
+      48.32,
+      3.0,
+      48.32,
+      2.2
+    ],
+    [
+      0.6,
+      39.68,
+      3.0,
+      39.68,
+      2.2
+    ]
+  ],
+  "pth_round_hits": 366,
+  "via_reference_hits": 366,
+  "usb_npth_copper_clearance_mm": 0.17509999000199944,
+  "manufacturing_released": false,
+  "limitations": [
+    "This checks selected exported geometry, not all clearances or connectivity.",
+    "USB nominal 0.1751 mm NPTH clearance still requires JLC DFM acceptance.",
+    "Combined PTH and separate via-reference drill overlap; do not count/drill them twice.",
+    "GKO carries D4 circular cutout at (82,127), diameter 3.3 mm; assembly qualification remains open.",
+    "Paste geometry correspondence does not approve stencil thickness or solder volume."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-26",
+  "document": "2de8d5754015f9ac",
+  "stage": "D4 3.30 mm cutout, centered at 82,127; Top/Inner1/Bottom GND rebuilt",
+  "native_strict_drc_violations": [],
+  "export_ui_drc": {
+    "time_local": "2026-09-26 20:43:02 Asia/Shanghai",
+    "checks": 141,
+    "violations": 0
+  },
+  "manufacturing_released": false,
+  "report": "assembly-quote-20260926.md"
+}
