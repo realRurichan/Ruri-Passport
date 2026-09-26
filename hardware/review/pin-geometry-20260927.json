@@ -1,0 +1,2669 @@
+{
+  "status": "supplementary geometry check only; NOT fabrication release",
+  "archive": "hardware/eda/Ruri-Passport-RevA.epro",
+  "component_count": 187,
+  "checked_pin_count": 413,
+  "errors": [],
+  "unconnected_pins": [
+    {
+      "ref": "U7",
+      "pin": "5",
+      "name": "NC"
+    },
+    {
+      "ref": "U7",
+      "pin": "6",
+      "name": "NC"
+    },
+    {
+      "ref": "U7",
+      "pin": "12",
+      "name": "NC"
+    },
+    {
+      "ref": "U7",
+      "pin": "13",
+      "name": "NC"
+    },
+    {
+      "ref": "D7",
+      "pin": "2",
+      "name": "IO2"
+    },
+    {
+      "ref": "U8",
+      "pin": "11",
+      "name": "IC"
+    },
+    {
+      "ref": "U8",
+      "pin": "23",
+      "name": "ANT1"
+    },
+    {
+      "ref": "U8",
+      "pin": "24",
+      "name": "ANT2"
+    },
+    {
+      "ref": "U8",
+      "pin": "25",
+      "name": "VDD_HF"
+    },
+    {
+      "ref": "U8",
+      "pin": "32",
+      "name": "NC"
+    },
+    {
+      "ref": "U8",
+      "pin": "33",
+      "name": "NC"
+    },
+    {
+      "ref": "U8",
+      "pin": "34",
+      "name": "NC"
+    },
+    {
+      "ref": "U8",
+      "pin": "35",
+      "name": "NC"
+    },
+    {
+      "ref": "U8",
+      "pin": "36",
+      "name": "NC"
+    },
+    {
+      "ref": "U8",
+      "pin": "37",
+      "name": "DCDC_EN"
+    },
+    {
+      "ref": "U8",
+      "pin": "38",
+      "name": "IC"
+    },
+    {
+      "ref": "U8",
+      "pin": "40",
+      "name": "CLK_REQ"
+    },
+    {
+      "ref": "Y1",
+      "pin": "2",
+      "name": "NC"
+    },
+    {
+      "ref": "Y1",
+      "pin": "4",
+      "name": "NC"
+    },
+    {
+      "ref": "J2",
+      "pin": "A8",
+      "name": "SBU1"
+    },
+    {
+      "ref": "J2",
+      "pin": "B8",
+      "name": "SBU2"
+    },
+    {
+      "ref": "U3",
+      "pin": "14",
+      "name": "TMR"
+    },
+    {
+      "ref": "U3",
+      "pin": "15",
+      "name": "ITERM"
+    },
+    {
+      "ref": "U5",
+      "pin": "4",
+      "name": "NC"
+    },
+    {
+      "ref": "U1",
+      "pin": "15",
+      "name": "IO3"
+    },
+    {
+      "ref": "U1",
+      "pin": "16",
+      "name": "IO46"
+    },
+    {
+      "ref": "U1",
+      "pin": "26",
+      "name": "IO45"
+    },
+    {
+      "ref": "U1",
+      "pin": "28",
+      "name": "IO35"
+    },
+    {
+      "ref": "U1",
+      "pin": "29",
+      "name": "IO36"
+    },
+    {
+      "ref": "U1",
+      "pin": "30",
+      "name": "IO37"
+    },
+    {
+      "ref": "J1",
+      "pin": "1",
+      "name": "XL"
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "name": "YU"
+    },
+    {
+      "ref": "J1",
+      "pin": "3",
+      "name": "XR"
+    },
+    {
+      "ref": "J1",
+      "pin": "4",
+      "name": "YD"
+    },
+    {
+      "ref": "J1",
+      "pin": "8",
+      "name": "FMARK"
+    },
+    {
+      "ref": "J1",
+      "pin": "14",
+      "name": "SPI_SDO"
+    }
+  ],
+  "checks": [
+    {
+      "ref": "J4",
+      "pin": "1",
+      "expected": "SD_DAT2",
+      "actual": "SD_DAT2"
+    },
+    {
+      "ref": "J4",
+      "pin": "2",
+      "expected": "SD_CS_N",
+      "actual": "SD_CS_N"
+    },
+    {
+      "ref": "J4",
+      "pin": "3",
+      "expected": "SD_MOSI_CARD",
+      "actual": "SD_MOSI_CARD"
+    },
+    {
+      "ref": "J4",
+      "pin": "4",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "J4",
+      "pin": "5",
+      "expected": "SD_SCK_CARD",
+      "actual": "SD_SCK_CARD"
+    },
+    {
+      "ref": "J4",
+      "pin": "6",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J4",
+      "pin": "7",
+      "expected": "SD_MISO",
+      "actual": "SD_MISO"
+    },
+    {
+      "ref": "J4",
+      "pin": "8",
+      "expected": "SD_DAT1",
+      "actual": "SD_DAT1"
+    },
+    {
+      "ref": "J4",
+      "pin": "9",
+      "expected": "SD_DETECT_N",
+      "actual": "SD_DETECT_N"
+    },
+    {
+      "ref": "J4",
+      "pin": "10",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J4",
+      "pin": "11",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J4",
+      "pin": "12",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J4",
+      "pin": "13",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J4",
+      "pin": "14",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U7",
+      "pin": "1",
+      "expected": "I2S_DOUT_AUDIO",
+      "actual": "I2S_DOUT_AUDIO"
+    },
+    {
+      "ref": "U7",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U7",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U7",
+      "pin": "4",
+      "expected": "AMP_ENABLE",
+      "actual": "AMP_ENABLE"
+    },
+    {
+      "ref": "U7",
+      "pin": "5",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U7",
+      "pin": "6",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U7",
+      "pin": "7",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "U7",
+      "pin": "8",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "U7",
+      "pin": "9",
+      "expected": "SPK_OUT_P",
+      "actual": "SPK_OUT_P"
+    },
+    {
+      "ref": "U7",
+      "pin": "10",
+      "expected": "SPK_OUT_N",
+      "actual": "SPK_OUT_N"
+    },
+    {
+      "ref": "U7",
+      "pin": "11",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U7",
+      "pin": "12",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U7",
+      "pin": "13",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U7",
+      "pin": "14",
+      "expected": "I2S_WS_AUDIO",
+      "actual": "I2S_WS_AUDIO"
+    },
+    {
+      "ref": "U7",
+      "pin": "15",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U7",
+      "pin": "16",
+      "expected": "I2S_BCLK_AUDIO",
+      "actual": "I2S_BCLK_AUDIO"
+    },
+    {
+      "ref": "U7",
+      "pin": "17",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J5",
+      "pin": "1",
+      "expected": "SPK_OUT_P",
+      "actual": "SPK_OUT_P"
+    },
+    {
+      "ref": "J5",
+      "pin": "2",
+      "expected": "SPK_OUT_N",
+      "actual": "SPK_OUT_N"
+    },
+    {
+      "ref": "J5",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J5",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "MIC1",
+      "pin": "1",
+      "expected": "I2S_WS_AUDIO",
+      "actual": "I2S_WS_AUDIO"
+    },
+    {
+      "ref": "MIC1",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "MIC1",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "MIC1",
+      "pin": "4",
+      "expected": "I2S_BCLK_AUDIO",
+      "actual": "I2S_BCLK_AUDIO"
+    },
+    {
+      "ref": "MIC1",
+      "pin": "5",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "MIC1",
+      "pin": "6",
+      "expected": "I2S_DIN",
+      "actual": "I2S_DIN"
+    },
+    {
+      "ref": "R44",
+      "pin": "1",
+      "expected": "VBAT_SENSE",
+      "actual": "VBAT_SENSE"
+    },
+    {
+      "ref": "R44",
+      "pin": "2",
+      "expected": "VBAT_ADC_SW",
+      "actual": "VBAT_ADC_SW"
+    },
+    {
+      "ref": "R45",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R45",
+      "pin": "2",
+      "expected": "VBAT_SENSE",
+      "actual": "VBAT_SENSE"
+    },
+    {
+      "ref": "C23",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C23",
+      "pin": "2",
+      "expected": "VBAT_SENSE",
+      "actual": "VBAT_SENSE"
+    },
+    {
+      "ref": "D1",
+      "pin": "1",
+      "expected": "USB_DP_CONN",
+      "actual": "USB_DP_CONN"
+    },
+    {
+      "ref": "D1",
+      "pin": "2",
+      "expected": "USB_DM_CONN",
+      "actual": "USB_DM_CONN"
+    },
+    {
+      "ref": "D1",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "D2",
+      "pin": "1",
+      "expected": "USB_CC1",
+      "actual": "USB_CC1"
+    },
+    {
+      "ref": "D2",
+      "pin": "2",
+      "expected": "USB_CC2",
+      "actual": "USB_CC2"
+    },
+    {
+      "ref": "D2",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "D3",
+      "pin": "1",
+      "expected": "SD_SCK_CARD",
+      "actual": "SD_SCK_CARD"
+    },
+    {
+      "ref": "D3",
+      "pin": "2",
+      "expected": "SD_MOSI_CARD",
+      "actual": "SD_MOSI_CARD"
+    },
+    {
+      "ref": "D3",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "L2",
+      "pin": "1",
+      "expected": "NFC_TX1",
+      "actual": "NFC_TX1"
+    },
+    {
+      "ref": "L2",
+      "pin": "2",
+      "expected": "RF_EMC_A",
+      "actual": "RF_EMC_A"
+    },
+    {
+      "ref": "C40",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C40",
+      "pin": "2",
+      "expected": "RF_EMC_A",
+      "actual": "RF_EMC_A"
+    },
+    {
+      "ref": "C42",
+      "pin": "1",
+      "expected": "RF_MATCH_A",
+      "actual": "RF_MATCH_A"
+    },
+    {
+      "ref": "C42",
+      "pin": "2",
+      "expected": "RF_EMC_A",
+      "actual": "RF_EMC_A"
+    },
+    {
+      "ref": "C44",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C44",
+      "pin": "2",
+      "expected": "RF_MATCH_A",
+      "actual": "RF_MATCH_A"
+    },
+    {
+      "ref": "R60",
+      "pin": "1",
+      "expected": "RF_DAMP_A",
+      "actual": "RF_DAMP_A"
+    },
+    {
+      "ref": "R60",
+      "pin": "2",
+      "expected": "RF_MATCH_A",
+      "actual": "RF_MATCH_A"
+    },
+    {
+      "ref": "R66",
+      "pin": "1",
+      "expected": "ANT_A",
+      "actual": "ANT_A"
+    },
+    {
+      "ref": "R66",
+      "pin": "2",
+      "expected": "RF_DAMP_A",
+      "actual": "RF_DAMP_A"
+    },
+    {
+      "ref": "L3",
+      "pin": "1",
+      "expected": "NFC_TX2",
+      "actual": "NFC_TX2"
+    },
+    {
+      "ref": "L3",
+      "pin": "2",
+      "expected": "RF_EMC_B",
+      "actual": "RF_EMC_B"
+    },
+    {
+      "ref": "C41",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C41",
+      "pin": "2",
+      "expected": "RF_EMC_B",
+      "actual": "RF_EMC_B"
+    },
+    {
+      "ref": "C43",
+      "pin": "1",
+      "expected": "RF_MATCH_B",
+      "actual": "RF_MATCH_B"
+    },
+    {
+      "ref": "C43",
+      "pin": "2",
+      "expected": "RF_EMC_B",
+      "actual": "RF_EMC_B"
+    },
+    {
+      "ref": "C45",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C45",
+      "pin": "2",
+      "expected": "RF_MATCH_B",
+      "actual": "RF_MATCH_B"
+    },
+    {
+      "ref": "R61",
+      "pin": "1",
+      "expected": "RF_DAMP_B",
+      "actual": "RF_DAMP_B"
+    },
+    {
+      "ref": "R61",
+      "pin": "2",
+      "expected": "RF_MATCH_B",
+      "actual": "RF_MATCH_B"
+    },
+    {
+      "ref": "R67",
+      "pin": "1",
+      "expected": "ANT_B",
+      "actual": "ANT_B"
+    },
+    {
+      "ref": "R67",
+      "pin": "2",
+      "expected": "RF_DAMP_B",
+      "actual": "RF_DAMP_B"
+    },
+    {
+      "ref": "R62",
+      "pin": "1",
+      "expected": "RF_RX_A",
+      "actual": "RF_RX_A"
+    },
+    {
+      "ref": "R62",
+      "pin": "2",
+      "expected": "RF_EMC_A",
+      "actual": "RF_EMC_A"
+    },
+    {
+      "ref": "R64",
+      "pin": "1",
+      "expected": "RF_RX_A",
+      "actual": "RF_RX_A"
+    },
+    {
+      "ref": "R64",
+      "pin": "2",
+      "expected": "ANT_A",
+      "actual": "ANT_A"
+    },
+    {
+      "ref": "C46",
+      "pin": "1",
+      "expected": "NFC_RXN",
+      "actual": "NFC_RXN"
+    },
+    {
+      "ref": "C46",
+      "pin": "2",
+      "expected": "RF_RX_A",
+      "actual": "RF_RX_A"
+    },
+    {
+      "ref": "R63",
+      "pin": "1",
+      "expected": "RF_RX_B",
+      "actual": "RF_RX_B"
+    },
+    {
+      "ref": "R63",
+      "pin": "2",
+      "expected": "RF_EMC_B",
+      "actual": "RF_EMC_B"
+    },
+    {
+      "ref": "R65",
+      "pin": "1",
+      "expected": "RF_RX_B",
+      "actual": "RF_RX_B"
+    },
+    {
+      "ref": "R65",
+      "pin": "2",
+      "expected": "ANT_B",
+      "actual": "ANT_B"
+    },
+    {
+      "ref": "C47",
+      "pin": "1",
+      "expected": "NFC_RXP",
+      "actual": "NFC_RXP"
+    },
+    {
+      "ref": "C47",
+      "pin": "2",
+      "expected": "RF_RX_B",
+      "actual": "RF_RX_B"
+    },
+    {
+      "ref": "C48",
+      "pin": "1",
+      "expected": "RF_MATCH_A",
+      "actual": "RF_MATCH_A"
+    },
+    {
+      "ref": "C48",
+      "pin": "2",
+      "expected": "RF_EMC_A",
+      "actual": "RF_EMC_A"
+    },
+    {
+      "ref": "C49",
+      "pin": "1",
+      "expected": "RF_MATCH_B",
+      "actual": "RF_MATCH_B"
+    },
+    {
+      "ref": "C49",
+      "pin": "2",
+      "expected": "RF_EMC_B",
+      "actual": "RF_EMC_B"
+    },
+    {
+      "ref": "C50",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C50",
+      "pin": "2",
+      "expected": "RF_MATCH_A",
+      "actual": "RF_MATCH_A"
+    },
+    {
+      "ref": "C51",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C51",
+      "pin": "2",
+      "expected": "RF_MATCH_B",
+      "actual": "RF_MATCH_B"
+    },
+    {
+      "ref": "ANT1",
+      "pin": "1",
+      "expected": "ANT_A",
+      "actual": "ANT_A"
+    },
+    {
+      "ref": "ANT1",
+      "pin": "2",
+      "expected": "ANT_B",
+      "actual": "ANT_B"
+    },
+    {
+      "ref": "D5",
+      "pin": "1",
+      "expected": "SD_MISO",
+      "actual": "SD_MISO"
+    },
+    {
+      "ref": "D5",
+      "pin": "2",
+      "expected": "SD_CS_N",
+      "actual": "SD_CS_N"
+    },
+    {
+      "ref": "D5",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "D6",
+      "pin": "1",
+      "expected": "SD_DAT1",
+      "actual": "SD_DAT1"
+    },
+    {
+      "ref": "D6",
+      "pin": "2",
+      "expected": "SD_DAT2",
+      "actual": "SD_DAT2"
+    },
+    {
+      "ref": "D6",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "D7",
+      "pin": "1",
+      "expected": "VBUS_5V",
+      "actual": "VBUS_5V"
+    },
+    {
+      "ref": "D7",
+      "pin": "2",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "D7",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "TP1",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "TP2",
+      "pin": "1",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "TP3",
+      "pin": "1",
+      "expected": "ESP_EN",
+      "actual": "ESP_EN"
+    },
+    {
+      "ref": "TP4",
+      "pin": "1",
+      "expected": "BOOT_N",
+      "actual": "BOOT_N"
+    },
+    {
+      "ref": "TP5",
+      "pin": "1",
+      "expected": "NFC_DWL_REQ",
+      "actual": "NFC_DWL_REQ"
+    },
+    {
+      "ref": "TP6",
+      "pin": "1",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "TP7",
+      "pin": "1",
+      "expected": "VBAT",
+      "actual": "VBAT"
+    },
+    {
+      "ref": "TP8",
+      "pin": "1",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "TP9",
+      "pin": "1",
+      "expected": "NFC_IRQ",
+      "actual": "NFC_IRQ"
+    },
+    {
+      "ref": "TP10",
+      "pin": "1",
+      "expected": "NFC_TVDD",
+      "actual": "NFC_TVDD"
+    },
+    {
+      "ref": "U8",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U8",
+      "pin": "2",
+      "expected": "NFC_DWL_REQ",
+      "actual": "NFC_DWL_REQ"
+    },
+    {
+      "ref": "U8",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U8",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U8",
+      "pin": "5",
+      "expected": "I2C_SDA",
+      "actual": "I2C_SDA"
+    },
+    {
+      "ref": "U8",
+      "pin": "6",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "U8",
+      "pin": "7",
+      "expected": "I2C_SCL",
+      "actual": "I2C_SCL"
+    },
+    {
+      "ref": "U8",
+      "pin": "8",
+      "expected": "NFC_IRQ",
+      "actual": "NFC_IRQ"
+    },
+    {
+      "ref": "U8",
+      "pin": "9",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U8",
+      "pin": "10",
+      "expected": "NFC_VEN",
+      "actual": "NFC_VEN"
+    },
+    {
+      "ref": "U8",
+      "pin": "11",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "12",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "U8",
+      "pin": "13",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "U8",
+      "pin": "14",
+      "expected": "NFC_TVDD",
+      "actual": "NFC_TVDD"
+    },
+    {
+      "ref": "U8",
+      "pin": "15",
+      "expected": "NFC_RXN",
+      "actual": "NFC_RXN"
+    },
+    {
+      "ref": "U8",
+      "pin": "16",
+      "expected": "NFC_RXP",
+      "actual": "NFC_RXP"
+    },
+    {
+      "ref": "U8",
+      "pin": "17",
+      "expected": "NFC_VMID",
+      "actual": "NFC_VMID"
+    },
+    {
+      "ref": "U8",
+      "pin": "18",
+      "expected": "NFC_TVDD",
+      "actual": "NFC_TVDD"
+    },
+    {
+      "ref": "U8",
+      "pin": "19",
+      "expected": "NFC_TX2",
+      "actual": "NFC_TX2"
+    },
+    {
+      "ref": "U8",
+      "pin": "20",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U8",
+      "pin": "21",
+      "expected": "NFC_TX1",
+      "actual": "NFC_TX1"
+    },
+    {
+      "ref": "U8",
+      "pin": "22",
+      "expected": "NFC_TVDD",
+      "actual": "NFC_TVDD"
+    },
+    {
+      "ref": "U8",
+      "pin": "23",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "24",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "25",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "26",
+      "expected": "NFC_VDD18",
+      "actual": "NFC_VDD18"
+    },
+    {
+      "ref": "U8",
+      "pin": "27",
+      "expected": "NFC_VDD18",
+      "actual": "NFC_VDD18"
+    },
+    {
+      "ref": "U8",
+      "pin": "28",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "U8",
+      "pin": "29",
+      "expected": "NFC_XTAL2",
+      "actual": "NFC_XTAL2"
+    },
+    {
+      "ref": "U8",
+      "pin": "30",
+      "expected": "NFC_XTAL1",
+      "actual": "NFC_XTAL1"
+    },
+    {
+      "ref": "U8",
+      "pin": "31",
+      "expected": "NFC_VDD18",
+      "actual": "NFC_VDD18"
+    },
+    {
+      "ref": "U8",
+      "pin": "32",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "33",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "34",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "35",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "36",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "37",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "38",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "39",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U8",
+      "pin": "40",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U8",
+      "pin": "41",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "Y1",
+      "pin": "1",
+      "expected": "NFC_XTAL1",
+      "actual": "NFC_XTAL1"
+    },
+    {
+      "ref": "Y1",
+      "pin": "2",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "Y1",
+      "pin": "3",
+      "expected": "NFC_XTAL2",
+      "actual": "NFC_XTAL2"
+    },
+    {
+      "ref": "Y1",
+      "pin": "4",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "D4",
+      "pin": "1",
+      "expected": "IR_LEDK",
+      "actual": "IR_LEDK"
+    },
+    {
+      "ref": "D4",
+      "pin": "2",
+      "expected": "IR_LEDA",
+      "actual": "IR_LEDA"
+    },
+    {
+      "ref": "Q1",
+      "pin": "1",
+      "expected": "IR_GATE",
+      "actual": "IR_GATE"
+    },
+    {
+      "ref": "Q1",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "Q1",
+      "pin": "3",
+      "expected": "IR_LEDK",
+      "actual": "IR_LEDK"
+    },
+    {
+      "ref": "IR1",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "IR1",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "IR1",
+      "pin": "3",
+      "expected": "IR_RX",
+      "actual": "IR_RX"
+    },
+    {
+      "ref": "IR1",
+      "pin": "4",
+      "expected": "IR_RX_VCC",
+      "actual": "IR_RX_VCC"
+    },
+    {
+      "ref": "U9",
+      "pin": "1",
+      "expected": "BL_OP_OUT",
+      "actual": "BL_OP_OUT"
+    },
+    {
+      "ref": "U9",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U9",
+      "pin": "3",
+      "expected": "BL_REF",
+      "actual": "BL_REF"
+    },
+    {
+      "ref": "U9",
+      "pin": "4",
+      "expected": "BL_FB",
+      "actual": "BL_FB"
+    },
+    {
+      "ref": "U9",
+      "pin": "5",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "Q2",
+      "pin": "1",
+      "expected": "BL_GATE",
+      "actual": "BL_GATE"
+    },
+    {
+      "ref": "Q2",
+      "pin": "2",
+      "expected": "BL_SENSE",
+      "actual": "BL_SENSE"
+    },
+    {
+      "ref": "Q2",
+      "pin": "3",
+      "expected": "LCD_LEDK",
+      "actual": "LCD_LEDK"
+    },
+    {
+      "ref": "U2",
+      "pin": "1",
+      "expected": "IOX_IRQ_N",
+      "actual": "IOX_IRQ_N"
+    },
+    {
+      "ref": "U2",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "4",
+      "expected": "IOX_UNUSED_P00",
+      "actual": "IOX_UNUSED_P00"
+    },
+    {
+      "ref": "U2",
+      "pin": "5",
+      "expected": "IOX_UNUSED_P01",
+      "actual": "IOX_UNUSED_P01"
+    },
+    {
+      "ref": "U2",
+      "pin": "6",
+      "expected": "IOX_UNUSED_P02",
+      "actual": "IOX_UNUSED_P02"
+    },
+    {
+      "ref": "U2",
+      "pin": "7",
+      "expected": "IOX_UNUSED_P03",
+      "actual": "IOX_UNUSED_P03"
+    },
+    {
+      "ref": "U2",
+      "pin": "8",
+      "expected": "IOX_UNUSED_P04",
+      "actual": "IOX_UNUSED_P04"
+    },
+    {
+      "ref": "U2",
+      "pin": "9",
+      "expected": "SD_DETECT_N",
+      "actual": "SD_DETECT_N"
+    },
+    {
+      "ref": "U2",
+      "pin": "10",
+      "expected": "IOX_UNUSED_P06",
+      "actual": "IOX_UNUSED_P06"
+    },
+    {
+      "ref": "U2",
+      "pin": "11",
+      "expected": "CHG_STATUS_N",
+      "actual": "CHG_STATUS_N"
+    },
+    {
+      "ref": "U2",
+      "pin": "12",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "13",
+      "expected": "LCD_RESET_N",
+      "actual": "LCD_RESET_N"
+    },
+    {
+      "ref": "U2",
+      "pin": "14",
+      "expected": "IOX_UNUSED_P11",
+      "actual": "IOX_UNUSED_P11"
+    },
+    {
+      "ref": "U2",
+      "pin": "15",
+      "expected": "AMP_ENABLE",
+      "actual": "AMP_ENABLE"
+    },
+    {
+      "ref": "U2",
+      "pin": "16",
+      "expected": "USB_PGOOD_N",
+      "actual": "USB_PGOOD_N"
+    },
+    {
+      "ref": "U2",
+      "pin": "17",
+      "expected": "CHG_EN1",
+      "actual": "CHG_EN1"
+    },
+    {
+      "ref": "U2",
+      "pin": "18",
+      "expected": "CHG_EN2",
+      "actual": "CHG_EN2"
+    },
+    {
+      "ref": "U2",
+      "pin": "19",
+      "expected": "PERIPH_ENABLE",
+      "actual": "PERIPH_ENABLE"
+    },
+    {
+      "ref": "U2",
+      "pin": "20",
+      "expected": "REG_PWM",
+      "actual": "REG_PWM"
+    },
+    {
+      "ref": "U2",
+      "pin": "21",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "22",
+      "expected": "I2C_SCL",
+      "actual": "I2C_SCL"
+    },
+    {
+      "ref": "U2",
+      "pin": "23",
+      "expected": "I2C_SDA",
+      "actual": "I2C_SDA"
+    },
+    {
+      "ref": "U2",
+      "pin": "24",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "SW1",
+      "pin": "1",
+      "expected": "KEY_UP_N",
+      "actual": "KEY_UP_N"
+    },
+    {
+      "ref": "SW1",
+      "pin": "3",
+      "expected": "KEY_UP_N",
+      "actual": "KEY_UP_N"
+    },
+    {
+      "ref": "SW1",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW1",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW2",
+      "pin": "1",
+      "expected": "KEY_DOWN_N",
+      "actual": "KEY_DOWN_N"
+    },
+    {
+      "ref": "SW2",
+      "pin": "3",
+      "expected": "KEY_DOWN_N",
+      "actual": "KEY_DOWN_N"
+    },
+    {
+      "ref": "SW2",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW2",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW3",
+      "pin": "1",
+      "expected": "KEY_LEFT_N",
+      "actual": "KEY_LEFT_N"
+    },
+    {
+      "ref": "SW3",
+      "pin": "3",
+      "expected": "KEY_LEFT_N",
+      "actual": "KEY_LEFT_N"
+    },
+    {
+      "ref": "SW3",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW3",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW4",
+      "pin": "1",
+      "expected": "KEY_RIGHT_N",
+      "actual": "KEY_RIGHT_N"
+    },
+    {
+      "ref": "SW4",
+      "pin": "3",
+      "expected": "KEY_RIGHT_N",
+      "actual": "KEY_RIGHT_N"
+    },
+    {
+      "ref": "SW4",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW4",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW5",
+      "pin": "1",
+      "expected": "KEY_OK_N",
+      "actual": "KEY_OK_N"
+    },
+    {
+      "ref": "SW5",
+      "pin": "3",
+      "expected": "KEY_OK_N",
+      "actual": "KEY_OK_N"
+    },
+    {
+      "ref": "SW5",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "SW5",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R77",
+      "pin": "1",
+      "expected": "IOX_UNUSED_P00",
+      "actual": "IOX_UNUSED_P00"
+    },
+    {
+      "ref": "R77",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R78",
+      "pin": "1",
+      "expected": "IOX_UNUSED_P01",
+      "actual": "IOX_UNUSED_P01"
+    },
+    {
+      "ref": "R78",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R79",
+      "pin": "1",
+      "expected": "IOX_UNUSED_P02",
+      "actual": "IOX_UNUSED_P02"
+    },
+    {
+      "ref": "R79",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R80",
+      "pin": "1",
+      "expected": "IOX_UNUSED_P03",
+      "actual": "IOX_UNUSED_P03"
+    },
+    {
+      "ref": "R80",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R81",
+      "pin": "1",
+      "expected": "IOX_UNUSED_P04",
+      "actual": "IOX_UNUSED_P04"
+    },
+    {
+      "ref": "R81",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R82",
+      "pin": "1",
+      "expected": "IOX_UNUSED_P06",
+      "actual": "IOX_UNUSED_P06"
+    },
+    {
+      "ref": "R82",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R83",
+      "pin": "1",
+      "expected": "IOX_UNUSED_P11",
+      "actual": "IOX_UNUSED_P11"
+    },
+    {
+      "ref": "R83",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U3",
+      "pin": "1",
+      "expected": "BAT_NTC",
+      "actual": "BAT_NTC"
+    },
+    {
+      "ref": "U3",
+      "pin": "2",
+      "expected": "VBAT",
+      "actual": "VBAT"
+    },
+    {
+      "ref": "U3",
+      "pin": "3",
+      "expected": "VBAT",
+      "actual": "VBAT"
+    },
+    {
+      "ref": "U3",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U3",
+      "pin": "5",
+      "expected": "CHG_EN2",
+      "actual": "CHG_EN2"
+    },
+    {
+      "ref": "U3",
+      "pin": "6",
+      "expected": "CHG_EN1",
+      "actual": "CHG_EN1"
+    },
+    {
+      "ref": "U3",
+      "pin": "7",
+      "expected": "USB_PGOOD_N",
+      "actual": "USB_PGOOD_N"
+    },
+    {
+      "ref": "U3",
+      "pin": "8",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U3",
+      "pin": "9",
+      "expected": "CHG_STATUS_N",
+      "actual": "CHG_STATUS_N"
+    },
+    {
+      "ref": "U3",
+      "pin": "10",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "U3",
+      "pin": "11",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "U3",
+      "pin": "12",
+      "expected": "CHG_ILIM",
+      "actual": "CHG_ILIM"
+    },
+    {
+      "ref": "U3",
+      "pin": "13",
+      "expected": "VBUS_5V",
+      "actual": "VBUS_5V"
+    },
+    {
+      "ref": "U3",
+      "pin": "14",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U3",
+      "pin": "15",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U3",
+      "pin": "16",
+      "expected": "CHG_ISET",
+      "actual": "CHG_ISET"
+    },
+    {
+      "ref": "U3",
+      "pin": "17",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J3",
+      "pin": "1",
+      "expected": "VBAT",
+      "actual": "VBAT"
+    },
+    {
+      "ref": "J3",
+      "pin": "2",
+      "expected": "BAT_NTC",
+      "actual": "BAT_NTC"
+    },
+    {
+      "ref": "J3",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J3",
+      "pin": "4",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J3",
+      "pin": "5",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U4",
+      "pin": "1",
+      "expected": "VSYS_RUN",
+      "actual": "VSYS_RUN"
+    },
+    {
+      "ref": "U4",
+      "pin": "2",
+      "expected": "REG_PWM",
+      "actual": "REG_PWM"
+    },
+    {
+      "ref": "U4",
+      "pin": "3",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U4",
+      "pin": "4",
+      "expected": "VREG_FB",
+      "actual": "VREG_FB"
+    },
+    {
+      "ref": "U4",
+      "pin": "5",
+      "expected": "VREG_PG",
+      "actual": "VREG_PG"
+    },
+    {
+      "ref": "U4",
+      "pin": "6",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "U4",
+      "pin": "7",
+      "expected": "VREG_L2",
+      "actual": "VREG_L2"
+    },
+    {
+      "ref": "U4",
+      "pin": "8",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U4",
+      "pin": "9",
+      "expected": "VREG_L1",
+      "actual": "VREG_L1"
+    },
+    {
+      "ref": "U4",
+      "pin": "10",
+      "expected": "VSYS_RUN",
+      "actual": "VSYS_RUN"
+    },
+    {
+      "ref": "L1",
+      "pin": "1",
+      "expected": "VREG_L1",
+      "actual": "VREG_L1"
+    },
+    {
+      "ref": "L1",
+      "pin": "2",
+      "expected": "VREG_L2",
+      "actual": "VREG_L2"
+    },
+    {
+      "ref": "SW6",
+      "pin": "1",
+      "expected": "PWR_BUTTON_N",
+      "actual": "PWR_BUTTON_N"
+    },
+    {
+      "ref": "SW6",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U5",
+      "pin": "1",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "U5",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U5",
+      "pin": "3",
+      "expected": "PERIPH_ENABLE",
+      "actual": "PERIPH_ENABLE"
+    },
+    {
+      "ref": "U5",
+      "pin": "4",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U5",
+      "pin": "5",
+      "expected": "PERIPH_QOD",
+      "actual": "PERIPH_QOD"
+    },
+    {
+      "ref": "U5",
+      "pin": "6",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "U10",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U10",
+      "pin": "2",
+      "expected": "PWR_ONT",
+      "actual": "PWR_ONT"
+    },
+    {
+      "ref": "U10",
+      "pin": "3",
+      "expected": "PWR_BUTTON_N",
+      "actual": "PWR_BUTTON_N"
+    },
+    {
+      "ref": "U10",
+      "pin": "4",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "U10",
+      "pin": "5",
+      "expected": "PWR_KILL_N",
+      "actual": "PWR_KILL_N"
+    },
+    {
+      "ref": "U10",
+      "pin": "6",
+      "expected": "PWR_PDT",
+      "actual": "PWR_PDT"
+    },
+    {
+      "ref": "U10",
+      "pin": "7",
+      "expected": "PWR_EN",
+      "actual": "PWR_EN"
+    },
+    {
+      "ref": "U10",
+      "pin": "8",
+      "expected": "PWR_INT_N",
+      "actual": "PWR_INT_N"
+    },
+    {
+      "ref": "U10",
+      "pin": "9",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "Q10",
+      "pin": "1",
+      "expected": "PWR_KILL",
+      "actual": "PWR_KILL"
+    },
+    {
+      "ref": "Q10",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "Q10",
+      "pin": "3",
+      "expected": "PWR_KILL_N",
+      "actual": "PWR_KILL_N"
+    },
+    {
+      "ref": "Q11",
+      "pin": "1",
+      "expected": "PWR_EN",
+      "actual": "PWR_EN"
+    },
+    {
+      "ref": "Q11",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "Q11",
+      "pin": "3",
+      "expected": "MAIN_SWITCH_D",
+      "actual": "MAIN_SWITCH_D"
+    },
+    {
+      "ref": "Q12",
+      "pin": "1",
+      "expected": "MAIN_GATE",
+      "actual": "MAIN_GATE"
+    },
+    {
+      "ref": "Q12",
+      "pin": "2",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "Q12",
+      "pin": "3",
+      "expected": "VSYS_RUN",
+      "actual": "VSYS_RUN"
+    },
+    {
+      "ref": "Q13",
+      "pin": "1",
+      "expected": "MAIN_GATE",
+      "actual": "MAIN_GATE"
+    },
+    {
+      "ref": "Q13",
+      "pin": "2",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "Q13",
+      "pin": "3",
+      "expected": "VSYS_RUN",
+      "actual": "VSYS_RUN"
+    },
+    {
+      "ref": "Q14",
+      "pin": "1",
+      "expected": "BAT_ADC_GATE",
+      "actual": "BAT_ADC_GATE"
+    },
+    {
+      "ref": "Q14",
+      "pin": "2",
+      "expected": "VBAT",
+      "actual": "VBAT"
+    },
+    {
+      "ref": "Q14",
+      "pin": "3",
+      "expected": "VBAT_ADC_SW",
+      "actual": "VBAT_ADC_SW"
+    },
+    {
+      "ref": "Q15",
+      "pin": "1",
+      "expected": "PWR_EN",
+      "actual": "PWR_EN"
+    },
+    {
+      "ref": "Q15",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "Q15",
+      "pin": "3",
+      "expected": "BAT_ADC_GATE",
+      "actual": "BAT_ADC_GATE"
+    },
+    {
+      "ref": "C60",
+      "pin": "1",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "C60",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C61",
+      "pin": "1",
+      "expected": "PWR_ONT",
+      "actual": "PWR_ONT"
+    },
+    {
+      "ref": "C61",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C62",
+      "pin": "1",
+      "expected": "PWR_PDT",
+      "actual": "PWR_PDT"
+    },
+    {
+      "ref": "C62",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "C63",
+      "pin": "1",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "C63",
+      "pin": "2",
+      "expected": "MAIN_GATE",
+      "actual": "MAIN_GATE"
+    },
+    {
+      "ref": "R70",
+      "pin": "1",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "R70",
+      "pin": "2",
+      "expected": "PWR_KILL_N",
+      "actual": "PWR_KILL_N"
+    },
+    {
+      "ref": "R71",
+      "pin": "1",
+      "expected": "PWR_KILL",
+      "actual": "PWR_KILL"
+    },
+    {
+      "ref": "R71",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "R72",
+      "pin": "1",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "R72",
+      "pin": "2",
+      "expected": "PWR_EN",
+      "actual": "PWR_EN"
+    },
+    {
+      "ref": "R73",
+      "pin": "1",
+      "expected": "MAIN_GATE",
+      "actual": "MAIN_GATE"
+    },
+    {
+      "ref": "R73",
+      "pin": "2",
+      "expected": "MAIN_SWITCH_D",
+      "actual": "MAIN_SWITCH_D"
+    },
+    {
+      "ref": "R74",
+      "pin": "1",
+      "expected": "VSYS",
+      "actual": "VSYS"
+    },
+    {
+      "ref": "R74",
+      "pin": "2",
+      "expected": "MAIN_GATE",
+      "actual": "MAIN_GATE"
+    },
+    {
+      "ref": "R75",
+      "pin": "1",
+      "expected": "VBAT",
+      "actual": "VBAT"
+    },
+    {
+      "ref": "R75",
+      "pin": "2",
+      "expected": "BAT_ADC_GATE",
+      "actual": "BAT_ADC_GATE"
+    },
+    {
+      "ref": "R76",
+      "pin": "1",
+      "expected": "VSYS_RUN",
+      "actual": "VSYS_RUN"
+    },
+    {
+      "ref": "R76",
+      "pin": "2",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U1",
+      "pin": "1",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U1",
+      "pin": "2",
+      "expected": "3V18",
+      "actual": "3V18"
+    },
+    {
+      "ref": "U1",
+      "pin": "3",
+      "expected": "ESP_EN",
+      "actual": "ESP_EN"
+    },
+    {
+      "ref": "U1",
+      "pin": "4",
+      "expected": "KEY_UP_N",
+      "actual": "KEY_UP_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "5",
+      "expected": "KEY_DOWN_N",
+      "actual": "KEY_DOWN_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "6",
+      "expected": "KEY_LEFT_N",
+      "actual": "KEY_LEFT_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "7",
+      "expected": "KEY_RIGHT_N",
+      "actual": "KEY_RIGHT_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "8",
+      "expected": "KEY_OK_N",
+      "actual": "KEY_OK_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "9",
+      "expected": "LCD_MOSI",
+      "actual": "LCD_MOSI"
+    },
+    {
+      "ref": "U1",
+      "pin": "10",
+      "expected": "NFC_VEN",
+      "actual": "NFC_VEN"
+    },
+    {
+      "ref": "U1",
+      "pin": "11",
+      "expected": "PWR_INT_N",
+      "actual": "PWR_INT_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "12",
+      "expected": "LCD_SCK",
+      "actual": "LCD_SCK"
+    },
+    {
+      "ref": "U1",
+      "pin": "13",
+      "expected": "USB_DM_MCU",
+      "actual": "USB_DM_MCU"
+    },
+    {
+      "ref": "U1",
+      "pin": "14",
+      "expected": "USB_DP_MCU",
+      "actual": "USB_DP_MCU"
+    },
+    {
+      "ref": "U1",
+      "pin": "15",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U1",
+      "pin": "16",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U1",
+      "pin": "17",
+      "expected": "LCD_DC",
+      "actual": "LCD_DC"
+    },
+    {
+      "ref": "U1",
+      "pin": "18",
+      "expected": "LCD_CS_N",
+      "actual": "LCD_CS_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "19",
+      "expected": "SD_MOSI",
+      "actual": "SD_MOSI"
+    },
+    {
+      "ref": "U1",
+      "pin": "20",
+      "expected": "SD_SCK",
+      "actual": "SD_SCK"
+    },
+    {
+      "ref": "U1",
+      "pin": "21",
+      "expected": "SD_MISO",
+      "actual": "SD_MISO"
+    },
+    {
+      "ref": "U1",
+      "pin": "22",
+      "expected": "SD_CS_N",
+      "actual": "SD_CS_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "23",
+      "expected": "PWR_KILL",
+      "actual": "PWR_KILL"
+    },
+    {
+      "ref": "U1",
+      "pin": "24",
+      "expected": "NFC_IRQ",
+      "actual": "NFC_IRQ"
+    },
+    {
+      "ref": "U1",
+      "pin": "25",
+      "expected": "IR_TX",
+      "actual": "IR_TX"
+    },
+    {
+      "ref": "U1",
+      "pin": "26",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U1",
+      "pin": "27",
+      "expected": "BOOT_N",
+      "actual": "BOOT_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "28",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U1",
+      "pin": "29",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U1",
+      "pin": "30",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "U1",
+      "pin": "31",
+      "expected": "IR_RX",
+      "actual": "IR_RX"
+    },
+    {
+      "ref": "U1",
+      "pin": "32",
+      "expected": "I2S_BCLK",
+      "actual": "I2S_BCLK"
+    },
+    {
+      "ref": "U1",
+      "pin": "33",
+      "expected": "I2S_WS",
+      "actual": "I2S_WS"
+    },
+    {
+      "ref": "U1",
+      "pin": "34",
+      "expected": "I2S_DOUT",
+      "actual": "I2S_DOUT"
+    },
+    {
+      "ref": "U1",
+      "pin": "35",
+      "expected": "I2S_DIN",
+      "actual": "I2S_DIN"
+    },
+    {
+      "ref": "U1",
+      "pin": "36",
+      "expected": "I2C_SDA",
+      "actual": "I2C_SDA"
+    },
+    {
+      "ref": "U1",
+      "pin": "37",
+      "expected": "LCD_BL_PWM",
+      "actual": "LCD_BL_PWM"
+    },
+    {
+      "ref": "U1",
+      "pin": "38",
+      "expected": "I2C_SCL",
+      "actual": "I2C_SCL"
+    },
+    {
+      "ref": "U1",
+      "pin": "39",
+      "expected": "VBAT_SENSE",
+      "actual": "VBAT_SENSE"
+    },
+    {
+      "ref": "U1",
+      "pin": "40",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "U1",
+      "pin": "41",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "1",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "J1",
+      "pin": "3",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "J1",
+      "pin": "4",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "J1",
+      "pin": "5",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "6",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "7",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "8",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "J1",
+      "pin": "9",
+      "expected": "LCD_CS_N",
+      "actual": "LCD_CS_N"
+    },
+    {
+      "ref": "J1",
+      "pin": "10",
+      "expected": "LCD_DC",
+      "actual": "LCD_DC"
+    },
+    {
+      "ref": "J1",
+      "pin": "11",
+      "expected": "LCD_SCK",
+      "actual": "LCD_SCK"
+    },
+    {
+      "ref": "J1",
+      "pin": "12",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "13",
+      "expected": "LCD_MOSI",
+      "actual": "LCD_MOSI"
+    },
+    {
+      "ref": "J1",
+      "pin": "14",
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "ref": "J1",
+      "pin": "15",
+      "expected": "LCD_RESET_N",
+      "actual": "LCD_RESET_N"
+    },
+    {
+      "ref": "J1",
+      "pin": "16",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "17",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "18",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "19",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "20",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "21",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "22",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "23",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "24",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "25",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "26",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "27",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "28",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "29",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "30",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "31",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "32",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "33",
+      "expected": "LCD_LEDA",
+      "actual": "LCD_LEDA"
+    },
+    {
+      "ref": "J1",
+      "pin": "34",
+      "expected": "LCD_LEDK",
+      "actual": "LCD_LEDK"
+    },
+    {
+      "ref": "J1",
+      "pin": "35",
+      "expected": "LCD_LEDK",
+      "actual": "LCD_LEDK"
+    },
+    {
+      "ref": "J1",
+      "pin": "36",
+      "expected": "LCD_LEDK",
+      "actual": "LCD_LEDK"
+    },
+    {
+      "ref": "J1",
+      "pin": "37",
+      "expected": "GND",
+      "actual": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "38",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "39",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "40",
+      "expected": "3V18_PERIPH",
+      "actual": "3V18_PERIPH"
+    }
+  ]
+}

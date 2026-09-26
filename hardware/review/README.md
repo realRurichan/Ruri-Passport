@@ -1,3 +1,9 @@
+# 最新检查点：2026-09-27
+
+已增加硬关机和未使用输入偏置；[接地与 NC 审核](ground-and-nc-20260927.md)记录 413 条引脚连接几何检查通过。原生 DRC 当前返回 603 条警告，尚未全部审核。PCB 与生产包仍旧版，不可放行。
+
+当前状态：原理图正在改为 SPI + 独立按键 GPIO；PCB/制造输出尚未同步。参见 [49 项针脚核对](spi-direct-keys-20260926.json)。完整芯片国产化、扩展器删除及 506 条原理图警告审阅尚未完成。
+
 # 最新审核状态
 
 当前工程与制造输出在 `../eda/Ruri-Passport-RevA` 和 `../manufacturing/latest`。原生严格 PCB DRC 0 错误，161 个元件/测试点、350 项针脚网络检查通过，装配 BOM/CPL 为142个器件/板，Gerber 8项几何检查通过。依据见 battery-connector-xh-20260926.json 和 gerber-battery-xh-check-20260926.json。

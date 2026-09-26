@@ -1,0 +1,266 @@
+{
+  "date": "2026-09-26",
+  "status": "schematic change checkpoint; PCB not synchronized; not for fabrication",
+  "source": "native EasyEDA project export",
+  "checks": [
+    {
+      "ref": "U1",
+      "pin": "4",
+      "net": "KEY_UP_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "5",
+      "net": "KEY_DOWN_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "6",
+      "net": "KEY_LEFT_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "7",
+      "net": "KEY_RIGHT_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "8",
+      "net": "KEY_OK_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "9",
+      "net": "LCD_MOSI"
+    },
+    {
+      "ref": "U1",
+      "pin": "10",
+      "net": "NFC_VEN"
+    },
+    {
+      "ref": "U1",
+      "pin": "11",
+      "net": "PWR_INT_N"
+    },
+    {
+      "ref": "U1",
+      "pin": "12",
+      "net": "LCD_SCK"
+    },
+    {
+      "ref": "U1",
+      "pin": "17",
+      "net": "LCD_DC"
+    },
+    {
+      "ref": "U1",
+      "pin": "18",
+      "net": "LCD_CS_N"
+    },
+    {
+      "ref": "J1",
+      "pin": "5",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "6",
+      "net": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "7",
+      "net": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "9",
+      "net": "LCD_CS_N"
+    },
+    {
+      "ref": "J1",
+      "pin": "10",
+      "net": "LCD_DC"
+    },
+    {
+      "ref": "J1",
+      "pin": "11",
+      "net": "LCD_SCK"
+    },
+    {
+      "ref": "J1",
+      "pin": "12",
+      "net": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "13",
+      "net": "LCD_MOSI"
+    },
+    {
+      "ref": "J1",
+      "pin": "14",
+      "net": null
+    },
+    {
+      "ref": "J1",
+      "pin": "15",
+      "net": "LCD_RESET_N"
+    },
+    {
+      "ref": "J1",
+      "pin": "16",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "37",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "38",
+      "net": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "39",
+      "net": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "40",
+      "net": "3V18_PERIPH"
+    },
+    {
+      "ref": "J1",
+      "pin": "17",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "18",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "19",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "20",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "21",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "22",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "23",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "24",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "25",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "26",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "27",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "28",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "29",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "30",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "31",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "32",
+      "net": "GND"
+    },
+    {
+      "ref": "U2",
+      "pin": "4",
+      "net": null
+    },
+    {
+      "ref": "U2",
+      "pin": "5",
+      "net": null
+    },
+    {
+      "ref": "U2",
+      "pin": "6",
+      "net": null
+    },
+    {
+      "ref": "U2",
+      "pin": "7",
+      "net": null
+    },
+    {
+      "ref": "U2",
+      "pin": "8",
+      "net": null
+    },
+    {
+      "ref": "U2",
+      "pin": "10",
+      "net": null
+    },
+    {
+      "ref": "U2",
+      "pin": "14",
+      "net": null
+    }
+  ],
+  "check_count": 49,
+  "errors": 0,
+  "native_schematic_drc": {
+    "errors": 0,
+    "warnings": 506,
+    "all_warnings_reviewed": false
+  },
+  "pending": [
+    "Implement new user request for hard shutdown; switch/button operating mode awaits reply",
+    "Remove remaining peripheral-control expander after power/control redesign",
+    "Domestic/basic-library component selection and spec review",
+    "Update legacy function labels inside custom symbols",
+    "Synchronize PCB, reroute and regenerate manufacturing outputs"
+  ]
+}

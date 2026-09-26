@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "status": "engineering checkpoint, not production released",
+  "status": "STALE: schematic changed to SPI/direct GPIO; PCB and manufacturing outputs not synchronized; do not fabricate",
   "drc_errors": 0,
   "pin_net_checks": 350,
   "assembly_components": 142,
@@ -9,8 +9,10 @@
     "hardware/manufacturing/latest/bom.csv": "a80531a3e8ef5ec50a449defefb93a03daf92247599fdc0e4f504d38d78aa73c",
     "hardware/manufacturing/latest/LICENSE": "d6475a84171f0cf7ff52667dea714df268fc65cea42f0bf328b0b70d4cd0ebab",
     "hardware/manufacturing/latest/cpl.xlsx": "12d04792575dabba3ab4c14f203de55f781d773cab2d943dc69a7d2a349417f1",
-    "hardware/manufacturing/latest/README.md": "7a64a9b2d0a87725f57c622c234b642f6ca7e87a7d2adfdb6ccd05e0f1b56513",
+    "hardware/manufacturing/latest/README.md": "f617ee3c37c37b35e48ecd5eb56dc6e22c1eb09b5804e4101f9f6dd5a6dcbe78",
     "hardware/manufacturing/latest/NOTICE.md": "fafcbb84514bf8de8281270dc7e6f1dd72072aaeec0d9f4db8f61e953acbb6eb",
     "hardware/manufacturing/latest/netlist.enet": "1ffe6bb85d37303060f8753a2387a9e49fa406870b13875176ade04a95705273"
-  }
+  },
+  "superseded_by": "hardware/review/spi-direct-keys-20260926.json",
+  "current_schematic_warning": "2026-09-27 SPI/direct keys/hard shutdown and unused-input pulldowns differ from this old PCB; DO NOT FABRICATE"
 }

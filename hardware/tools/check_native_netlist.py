@@ -51,14 +51,33 @@ expect['D5']={1:'SD_MISO',2:'SD_CS_N',3:'GND'}
 expect['D6']={1:'SD_DAT1',2:'SD_DAT2',3:'GND'}
 expect['D7']={1:'VBUS_5V',2:'',3:'GND'}
 for i,net in enumerate(['GND','3V18','ESP_EN','BOOT_N','NFC_DWL_REQ','VSYS','VBAT','3V18_PERIPH','NFC_IRQ','NFC_TVDD'],1):expect[f'TP{i}']={1:net}
+# 2026-09-27: verified SPI/direct-key/hard-shutdown schematic revision.
+expect['J1'].update({11:'LCD_SCK',13:'LCD_MOSI',40:'3V18_PERIPH',**{n:'GND' for n in range(17,33)}})
+expect['U1'].update({4:'KEY_UP_N',5:'KEY_DOWN_N',6:'KEY_LEFT_N',7:'KEY_RIGHT_N',8:'KEY_OK_N',9:'LCD_MOSI',10:'NFC_VEN',11:'PWR_INT_N',12:'LCD_SCK',23:'PWR_KILL'})
+for i,(pin,port) in enumerate([(4,'P00'),(5,'P01'),(6,'P02'),(7,'P03'),(8,'P04'),(10,'P06'),(14,'P11')]):
+ net='IOX_UNUSED_'+port
+ expect['U2'][pin]=net
+ expect[f'R{77+i}']={1:net,2:'GND'}
+expect['U4'].update({1:'VSYS_RUN',10:'VSYS_RUN'})
+expect['SW6'][1]='PWR_BUTTON_N'
+expect['R44'][2]='VBAT_ADC_SW'
+expect['U10']={1:'GND',2:'PWR_ONT',3:'PWR_BUTTON_N',4:'VSYS',5:'PWR_KILL_N',6:'PWR_PDT',7:'PWR_EN',8:'PWR_INT_N',9:'GND'}
+expect['Q10']={1:'PWR_KILL',2:'GND',3:'PWR_KILL_N'}
+expect['Q11']={1:'PWR_EN',2:'GND',3:'MAIN_SWITCH_D'}
+for ref in ['Q12','Q13']:expect[ref]={1:'MAIN_GATE',2:'VSYS',3:'VSYS_RUN'}
+expect['Q14']={1:'BAT_ADC_GATE',2:'VBAT',3:'VBAT_ADC_SW'}
+expect['Q15']={1:'PWR_EN',2:'GND',3:'BAT_ADC_GATE'}
+for ref,nets in {'C60':('VSYS','GND'),'C61':('PWR_ONT','GND'),'C62':('PWR_PDT','GND'),'C63':('VSYS','MAIN_GATE'),'R70':('3V18','PWR_KILL_N'),'R71':('PWR_KILL','GND'),'R72':('VSYS','PWR_EN'),'R73':('MAIN_GATE','MAIN_SWITCH_D'),'R74':('VSYS','MAIN_GATE'),'R75':('VBAT','BAT_ADC_GATE'),'R76':('VSYS_RUN','GND')}.items():expect[ref]=dict(enumerate(nets,1))
 errors=[];count=0
+refs=[x['props']['Designator'] for x in j['components'].values()]
+if len(refs)!=len(set(refs)):errors.append('Duplicate component designators')
 for ref,pins in expect.items():
  if ref not in c:errors.append(f'{ref}: missing');continue
  for pin,net in pins.items():
   count+=1;actual=c[ref]['pinInfoMap'].get(str(pin),{}).get('net','<missing pin>')
   if actual!=net:errors.append(f'{ref}.{pin}: expected {net!r}, got {actual!r}')
 for ref,part in c.items():
- if any(m in str(part['props']) for m in ('LTC2950','LTC2954','MAX17048')):errors.append(ref+': removed costly part still present')
+ if any(m in str(part['props']) for m in ('LTC2950','MAX17048')):errors.append(ref+': removed costly part still present')
  if not part['props'].get('Footprint'):errors.append(ref+': missing footprint')
  if '?' in ref:errors.append(ref+': unnumbered designator')
 for ref in ['ANT1','C4','C5','C48','C49','C50','C51','R64','R65']+[f'TP{i}' for i in range(1,11)]:

@@ -1,12 +1,14 @@
 # 主控 GPIO 分配草案
 
-目标 ESP32-S3-WROOM-1-N16R8。GPIO 编号不是模组物理脚号。此表与核心图网络对应，外设电路尚未完成。
+目标 ESP32-S3-WROOM-1-N16R8。GPIO 编号不是模组物理脚号。此表与 2026-09-26 客户端原理图网络对应；PCB 尚未同步。自定义符号内部旧功能别名尚待整理。
 
 | GPIO | 网络 | 功能 |
 | --- | --- | --- |
-| 4 / 5 / 6 / 7 | LCD_D0 / D1 / D2 / D3 | 显示数据低四位 |
-| 15 / 16 / 17 / 18 | LCD_D4 / D5 / D6 / D7 | 显示数据高四位 |
-| 8 | LCD_WR_N | 显示写时钟 |
+| 4 / 5 / 6 / 7 / 15 | KEY_UP_N / KEY_DOWN_N / KEY_LEFT_N / KEY_RIGHT_N / KEY_OK_N | 五向键独立输入，低有效，支持同时按键 |
+| 16 | LCD_MOSI | 屏幕 SPI 写数据 |
+| 17 | NFC_VEN | NFC 直接使能控制 |
+| 18 | PWR_INT_N | LTC2954 INT#，电源按键事件输入 |
+| 8 | LCD_SCK | 屏幕 SPI 时钟 |
 | 9 | LCD_DC | 命令/数据 |
 | 10 | LCD_CS_N | 显示片选 |
 | 43 | LCD_BL_PWM | 背光控制，必须经驱动电路 |
@@ -17,13 +19,9 @@
 | 44 / 2 | I2C_SDA / I2C_SCL | NFC 与 GPIO 扩展器 |
 | 47 | NFC_IRQ | NFC 中断 |
 | 48 / 38 | IR_TX / IR_RX | 红外发射驱动 / 接收 |
-| 21 | IOX_IRQ_N | RTC GPIO，扩展器中断及深睡唤醒 |
+| 21 | PWR_KILL | 高电平经 Q10 请求 LTC2954 切断主电源 |
 | 1 | VBAT_SENSE | ADC1 电池电压，1M/330k 分压 |
 
 共使用 29 个 GPIO。GPIO35/36/37 留给 N16R8 的 PSRAM；GPIO0 保留 BOOT 维护入口；GPIO3/45/46 不接外设，避免改变启动配置。GPIO43/44 已用于其他功能，不另提供 UART 调试。
 
-LCD RESET、NFC VEN、功放使能、SD 卡检测、五向键及侧边电源键接 TCA9535。2026-09-26 用户确认降本，改为软关机：主控常供电，外设通过负载开关断电。P16=PERIPH_ENABLE、P17=REG_PWM。电源键经 P06 及 INT 唤醒 GPIO21；其它输入状态变化也可能触发唤醒，需要固件判断。参见 [电源策略](POWER.md)。
-
-LCD 已选 CL40BC264-40C 非触摸版，8 位并口写入模式：RD 拉高，TE 暂不接，IM0/IM1 拉高、IM2 拉低；详见 [屏幕定义](DISPLAY.md)。I2S 功放与麦克风必须确认时隙、位宽和共享时钟支持。
-
-参考：[Espressif 模组数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)。这不是最终网表，也不代表完整电路已验证。
+LCD RESET、功放使能、SD 卡检测和充电控制暂时仍接 TCA9535。五向键和 NFC VEN 直接接 ESP32；电源键 SW6 接 LTC2954 PB，控制器 INT# 接 GPIO18。GPIO21 改为 PWR_KILL，不再接扩展器中断。U2 未使用的 P00/P01/P02/P03/P04/P06/P11 各用 10kΩ 下拉；扩展器仍服务于其它外设，尚未完全删除。P16=PERIPH_ENABLE、P17=REG_PWM。2026-09-27 已按用户选择加入按键硬关机原理图，参见 [电源策略](POWER.md)。PCB 尚未同步。
