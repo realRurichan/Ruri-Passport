@@ -83,4 +83,4 @@ quit
 
 ## 参与与许可
 
-欢迎提交问题和改进，见 [贡献说明](CONTRIBUTING.md)。原创代码与文档采用 [MIT 许可证](LICENSE)。第三方组件保留各自许可证；外部参考链接中的内容不包含在本项目授权内。
+欢迎提交问题和改进，见 [贡献说明](CONTRIBUTING.md)。原创硬件设计（原理图、PCB、机械图、BOM 及相关设计文档）采用 [CERN-OHL-S-2.0](hardware/LICENSE)，源文件位于 [hardware/](hardware/)，许可范围与来源见 [硬件许可声明](hardware/NOTICE.md)。软件、固件及开发工具继续采用 [MIT 许可证](LICENSE)。第三方组件保留各自许可证；外部参考链接中的内容不包含在本项目授权内。

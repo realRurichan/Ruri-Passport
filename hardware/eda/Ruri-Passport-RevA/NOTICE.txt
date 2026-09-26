@@ -1,0 +1,19 @@
+Ruri Passport Rev A hardware design
+Copyright (c) 2026 Ruri Passport contributors
+SPDX-License-Identifier: CERN-OHL-S-2.0
+
+Source location: https://github.com/realRurichan/Ruri-Passport
+Hardware source: https://github.com/realRurichan/Ruri-Passport/tree/main/hardware
+
+Original hardware design is licensed under CERN-OHL-S-2.0; see LICENSE.
+This Source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY,
+INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A
+PARTICULAR PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
+
+Third-party materials retain their original licences and notices.
+For third-party attribution and scope, see hardware/NOTICE.md and
+hardware/THIRD_PARTY_LICENSE.txt in the source repository. Keep those notices
+when redistributing third-party materials embedded in this project.
+
+2026-09-26: Original hardware design licensed under CERN-OHL-S-2.0.
+This engineering draft has not passed manufacturing release checks.

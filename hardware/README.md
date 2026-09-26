@@ -1,5 +1,7 @@
 # Rev A 硬件工程
 
+原创硬件设计采用 **[CERN-OHL-S-2.0](LICENSE)**。Copyright (c) 2026 Ruri Passport contributors。源文件地址：https://github.com/realRurichan/Ruri-Passport 。许可范围、第三方材料与无担保声明见 [NOTICE.md](NOTICE.md)。
+
 当前优先硬件，系统开发暂停。用户已接受 **88 × 135 mm** PCB，为约4英寸非触摸屏、五向键和两组板载天线留出空间。约2000mAh保护电池，首批2套，嘉立创全机贴。¥200/套仍是目标，尚无完整报价。
 
 嘉立创EDA专业版入口：[Ruri-Passport-RevA.eprj3](eda/Ruri-Passport-RevA/Ruri-Passport-RevA.eprj3)。须保留整个工程目录，原理图和封装库内嵌在各文档中。
