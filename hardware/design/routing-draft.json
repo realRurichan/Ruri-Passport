@@ -1,0 +1,11 @@
+{
+  "status": "FIRST PASS ONLY; power loops, USB pair, RF, return paths and thermal design require final refinement",
+  "plane_layers": ["Inner1"],
+  "default_width": 0.2,
+  "clearance": 0.16,
+  "widths": {"GND": 0.35, "VBUS_5V": 0.6, "VBAT": 0.8, "VSYS": 0.8, "3V18": 0.8, "3V18_PERIPH": 0.6, "VREG_L1": 0.6, "VREG_L2": 0.6},
+  "width_patterns": [["^(NFC_TX|RF_EMC|RF_MATCH|RF_DAMP|ANT_)", 0.4], ["^SPK_OUT", 0.4], ["^LCD_LED", 0.4]],
+  "extra_clearance": {},
+  "edge_keepout": {"ring": 0.15, "board": [88, 135], "layers": ["TopLayer", "Inner1", "Inner2", "BottomLayer"]},
+  "manual_nets": ["ANT_A", "ANT_B"]
+}

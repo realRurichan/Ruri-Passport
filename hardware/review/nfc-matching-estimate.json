@@ -1,0 +1,38 @@
+{
+  "status": "ESTIMATE ONLY - measure bare coil and final assembly before RF release",
+  "geometry_mm": {
+    "width": 34.0,
+    "height": 24.0,
+    "turns": 4,
+    "trace": 0.4,
+    "gap": 0.3
+  },
+  "assumptions": {
+    "antenna_loss_ohm": 1.5,
+    "antenna_parallel_pF": 5.0,
+    "each_damper_ohm": 2.0,
+    "emc_inductor_loss_ohm": 0.1
+  },
+  "approx_inductance_uH": 1.0284407112179625,
+  "emc_resonance_MHz": 14.528792078313682,
+  "approx_damped_coil_Q": 15.931480210066754,
+  "target_differential_ohm": 11,
+  "calculated_each_series_pF": 70.63776944255073,
+  "calculated_each_shunt_pF": 190.39689814287854,
+  "initial_each_series_pF": 62,
+  "initial_each_shunt_pF": 200,
+  "initial_differential_ohm": {
+    "real": 8.825099385576838,
+    "imag": -1.8314366409794793
+  },
+  "limits": [
+    "Excludes receiver loading, PCB parasitics, enclosure metal and nonlinear driver.",
+    "62/200 pF are populated trial values, not production-approved tuning.",
+    "Enable/calibrate DPC; verify TX current never exceeds 250mA in loading tests.",
+    "Verify AGC, RF voltage, reader and card-emulation performance in final enclosure."
+  ],
+  "sources": [
+    "https://www.nxp.com/docs/en/application-note/AN13219.pdf",
+    "https://web.stanford.edu/~boyd/papers/pdf/inductance_expressions.pdf"
+  ]
+}

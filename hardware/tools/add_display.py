@@ -28,7 +28,7 @@ run('generate-symbol.js','from-pins','--dir',D,'--name','RURI_LCD_CL40_40PIN','-
 sym('RURI_LCD_CL40_40PIN','J1','CL40BC264-40C / WITHOUT RTP',650,-450)
 text('RURI PASSPORT - DISPLAY / DRAFT - NOT FOR FABRICATION',100,-45,15)
 block('40-PIN FPC / 8080 8-BIT WRITE ONLY',100,-110,1150,-800)
-nets={5:'GND',6:'3V3',7:'3V3',9:'LCD_CS_N',10:'LCD_DC',11:'LCD_WR_N',12:'3V3',13:'GND',15:'LCD_RESET_N',16:'GND',33:'LCD_LEDA',34:'LCD_LEDK',35:'LCD_LEDK',36:'LCD_LEDK',37:'GND',38:'3V3',39:'3V3',40:'GND'}
+nets={5:'GND',6:'3V18_PERIPH',7:'3V18_PERIPH',9:'LCD_CS_N',10:'LCD_DC',11:'LCD_WR_N',12:'3V18_PERIPH',13:'GND',15:'LCD_RESET_N',16:'GND',33:'LCD_LEDA',34:'LCD_LEDK',35:'LCD_LEDK',36:'LCD_LEDK',37:'GND',38:'3V18_PERIPH',39:'3V18_PERIPH',40:'GND'}
 nets.update({17+i:f'LCD_D{i}' for i in range(8)})
 # Visible local common ground bus for unused upper data pins.
 for n in range(25,33):wire([(770,-450+coords[n][1],930,-450+coords[n][1])],'GND')
@@ -43,16 +43,16 @@ text('LEDA/LEDK require current-limited PWM driver; NOT a GPIO load.',130,-785)
 block('LOCAL DECOUPLING / CONTROL DEFAULTS',1300,-110,1880,-800)
 for ref,val,x in [('C6','100nF / 10V X7R',1390),('C7','4.7uF / 10V X5R',1670)]:
  sym('CAP',ref,val,x,-260,90,'C0603')
- wire([(x,-240,x,-200)],'3V3');label('3V3',x,-200)
+ wire([(x,-240,x,-200)],'3V18_PERIPH');label('3V18_PERIPH',x,-200)
  wire([(x,-280,x,-320)],'GND');sym('GND','','GND',x,-320)
 sym('RES','R4','10k / 1%',1410,-490,90,'R0603')
-wire([(1410,-470,1410,-430)],'3V3');label('3V3',1410,-430)
+wire([(1410,-470,1410,-430)],'3V18_PERIPH');label('3V18_PERIPH',1410,-430)
 wire([(1410,-510,1410,-560),(1410,-560,1530,-560)],'LCD_CS_N');label('LCD_CS_N',1530,-560)
 sym('RES','R5','10k / 1%',1680,-580,90,'R0603')
 wire([(1680,-560,1680,-500),(1680,-500,1800,-500)],'LCD_RESET_N');label('LCD_RESET_N',1800,-500)
 wire([(1680,-600,1680,-650)],'GND');sym('GND','','GND',1680,-650)
 text('RESET held low until GPIO expander drives high.',1320,-720)
-text('Check 3V3 tolerance against LCD operating maximum.',1320,-745)
+text('Check 3V18_PERIPH tolerance against LCD operating maximum.',1320,-745)
 # Adapt generator coordinates to the installed native client; preserve library shapes.
 rows=[];doc=None;custom=False;frame=set()
 for line in page.read_text().splitlines():

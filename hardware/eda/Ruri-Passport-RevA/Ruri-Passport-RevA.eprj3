@@ -3,7 +3,7 @@
   "owner_uuid": "2ff12631e020aa0043a40af248e72e79",
   "creator_uuid": "2ff12631e020aa0043a40af248e72e79",
   "created_at": "2026-09-26 14:23:21",
-  "updated_at": "2026-09-26 15:04:22",
+  "updated_at": "2026-09-26 17:17:00",
   "modifier_uuid": "2ff12631e020aa0043a40af248e72e79",
   "content": "",
   "archive": false,
@@ -31,28 +31,82 @@
         "name": "Mainboard",
         "board": "b98962ac08adcd61",
         "source": "",
-        "version": "1790403801386",
-        "updateTime": 1790403801387
+        "version": "1790414709025",
+        "updateTime": 1790414709025
       }
     },
     "sheets": {
+      "c835b5e8e87752a8": {
+        "uuid": "c835b5e8e87752a8",
+        "title": "Audio_Storage",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 1,
+        "source": "",
+        "version": "1790410228745",
+        "updateTime": 1790410228745
+      },
+      "085b953d8ef47397": {
+        "uuid": "085b953d8ef47397",
+        "title": "Controls",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 1.1111111,
+        "source": "",
+        "version": "1790410361078",
+        "updateTime": 1790410361078
+      },
       "bee18976220fde0b": {
         "uuid": "bee18976220fde0b",
         "title": "Core",
         "schematic_uuid": "23fa63e10211678f",
-        "zIndex": 1,
+        "zIndex": 1.3333333,
         "source": "",
-        "version": "1790403801388",
-        "updateTime": 1790403801388
+        "version": "1790410983070",
+        "updateTime": 1790410983070
       },
       "ad993e34b1635da7": {
         "uuid": "ad993e34b1635da7",
         "title": "Display",
         "schematic_uuid": "23fa63e10211678f",
-        "zIndex": 2,
+        "zIndex": 1.6666666,
         "source": "",
-        "version": "1790405621730",
-        "updateTime": 1790405621730
+        "version": "1790407960575",
+        "updateTime": 1790407960575
+      },
+      "aaef88a6bc1a8f4f": {
+        "uuid": "aaef88a6bc1a8f4f",
+        "title": "NFC",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 1.037037,
+        "source": "",
+        "version": "1790411951161",
+        "updateTime": 1790411951161
+      },
+      "4908a31efcd07cbd": {
+        "uuid": "4908a31efcd07cbd",
+        "title": "Optics",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 1.074074,
+        "source": "",
+        "version": "1790411951782",
+        "updateTime": 1790411951782
+      },
+      "837fc436d9c95e8a": {
+        "uuid": "837fc436d9c95e8a",
+        "title": "Power",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 1.2222222,
+        "source": "",
+        "version": "1790410361696",
+        "updateTime": 1790410361696
+      },
+      "146936d1992206fb": {
+        "uuid": "146936d1992206fb",
+        "title": "RF_Service",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 1.0185185,
+        "source": "",
+        "version": "1790414709025",
+        "updateTime": 1790414709025
       }
     },
     "pcbs": {
@@ -62,8 +116,8 @@
         "board": "b98962ac08adcd61",
         "parent_uuid": "",
         "source": "",
-        "version": "1790403801394",
-        "updateTime": 1790403801394
+        "version": "1790415917648",
+        "updateTime": 1790415917648
       }
     },
     "panels": {},

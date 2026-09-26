@@ -5,3 +5,9 @@ sdcard/data/
 # EDA generation staging and native automatic backups
 hardware/eda/**/.tmp/
 hardware/eda/**/*_backup/
+
+# Python generator caches
+__pycache__/
+
+# Local autorouter diagnostic output
+logs/freerouting.log*

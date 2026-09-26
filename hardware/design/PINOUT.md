@@ -9,20 +9,20 @@
 | 8 | LCD_WR_N | 显示写时钟 |
 | 9 | LCD_DC | 命令/数据 |
 | 10 | LCD_CS_N | 显示片选 |
-| 21 | LCD_BL_PWM | 背光控制，必须经驱动电路 |
+| 43 | LCD_BL_PWM | 背光控制，必须经驱动电路 |
 | 11 / 12 / 13 / 14 | SD_MOSI / SD_SCK / SD_MISO / SD_CS_N | microSD 独立 SPI |
 | 19 / 20 | USB_DM_MCU / USB_DP_MCU | 原生 USB 下载与调试 |
 | 39 / 40 | I2S_BCLK / I2S_WS | 音频共享时钟 |
 | 41 / 42 | I2S_DOUT / I2S_DIN | 功放数据 / 麦克风数据 |
-| 1 / 2 | I2C_SDA / I2C_SCL | NFC 与 GPIO 扩展器 |
+| 44 / 2 | I2C_SDA / I2C_SCL | NFC 与 GPIO 扩展器 |
 | 47 | NFC_IRQ | NFC 中断 |
 | 48 / 38 | IR_TX / IR_RX | 红外发射驱动 / 接收 |
-| 43 | IOX_IRQ_N | GPIO 扩展器中断 |
-| 44 | PWR_KILL | 电源关闭请求，极性及安全默认态待电源电路确认 |
+| 21 | IOX_IRQ_N | RTC GPIO，扩展器中断及深睡唤醒 |
+| 1 | VBAT_SENSE | ADC1 电池电压，1M/330k 分压 |
 
 共使用 29 个 GPIO。GPIO35/36/37 留给 N16R8 的 PSRAM；GPIO0 保留 BOOT 维护入口；GPIO3/45/46 不接外设，避免改变启动配置。GPIO43/44 已用于其他功能，不另提供 UART 调试。
 
-LCD RESET、NFC VEN、功放关闭、SD 卡检测、上/下/左/右/确认按钮拟接 GPIO 扩展器；最终扩展器型号与引脚尚未定义。电源按钮需要独立硬件控制，不依赖软件启动才能开机。关机请求不能因 MCU 复位悬空而误动作。
+LCD RESET、NFC VEN、功放使能、SD 卡检测、五向键及侧边电源键接 TCA9535。2026-09-26 用户确认降本，改为软关机：主控常供电，外设通过负载开关断电。P16=PERIPH_ENABLE、P17=REG_PWM。电源键经 P06 及 INT 唤醒 GPIO21；其它输入状态变化也可能触发唤醒，需要固件判断。参见 [电源策略](POWER.md)。
 
 LCD 已选 CL40BC264-40C 非触摸版，8 位并口写入模式：RD 拉高，TE 暂不接，IM0/IM1 拉高、IM2 拉低；详见 [屏幕定义](DISPLAY.md)。I2S 功放与麦克风必须确认时隙、位宽和共享时钟支持。
 
