@@ -1,0 +1,59 @@
+{
+  "status": "Native DRC pending",
+  "changes": [
+    {
+      "via": "6669b6f363b5445a",
+      "net": "NFC_IRQ",
+      "diameter_mm": 0.5,
+      "drill_unchanged": true
+    },
+    {
+      "via": "8916e9303370460f",
+      "net": "I2C_SDA",
+      "diameter_mm": 0.5,
+      "drill_unchanged": true
+    },
+    {
+      "via": "5d8511f140424c12",
+      "net": "GND",
+      "from_mil": [
+        2627.953,
+        1196.8503937007874
+      ],
+      "to_mil": [
+        2627.953,
+        1196.8503937007874
+      ],
+      "removed": false,
+      "attached_endpoints": 2
+    },
+    {
+      "via": "f981c9a11fff4a2c",
+      "net": "3V18",
+      "from_mil": [
+        2568.898,
+        1196.8503937007874
+      ],
+      "to_mil": [
+        2568.898,
+        1208.6614173228347
+      ],
+      "removed": false,
+      "attached_endpoints": 2
+    },
+    {
+      "via": "8916e9303370460f",
+      "net": "I2C_SDA",
+      "from_mil": [
+        2549.22,
+        1220.99
+      ],
+      "to_mil": [
+        2549.22,
+        1228.3464566929133
+      ],
+      "removed": false,
+      "attached_endpoints": 2
+    }
+  ]
+}

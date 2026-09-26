@@ -29,8 +29,9 @@ def region(name,layer,rect,prohibit):
                   'name':'RURI_ANT_'+name,'regionType':'PROHIBIT'},'PCB'))
 for layer in (1,15,16,2):
     # Board space beside the module antenna, plus directly below the antenna.
-    # The module's own shield/pin area at x=4..22,y>6.05 is intentionally excluded.
-    for i,rect in enumerate([(0,0,4,21),(22,0,37,21),(4,0,22,6.05)]):
+    # Native pads extend beyond the 4..22 mm body: 3.49996..22.50004 mm.
+    # Leave 0.25 mm from those pads; their escape routing goes inward.
+    for i,rect in enumerate([(0,0,3.25,21),(22.75,0,37,21),(3.25,0,22.75,6.05)]):
         region(f'WIFI_{layer}_{i}',layer,rect,['TRACK','FILL','COPPER','PLANE'])
     # NFC allows its designed top coil and bottom inner-terminal escape.
     # No planes under the coil; inner-layer routing is excluded too.

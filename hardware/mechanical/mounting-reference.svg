@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1380" viewBox="0 0 1240 1380">
+<rect width="1240" height="1380" fill="#f5f6f2"/>
+<g font-family="Arial,sans-serif" fill="#172c2b">
+<text x="80" y="52" font-size="29" font-weight="bold">Ruri Passport / enclosure mounting reference</text>
+<text x="80" y="86" font-size="18">PCB TOP VIEW · mm · rear volumes shown dashed · DRAFT</text>
+<rect x="100" y="120" width="704" height="1080" fill="#173c37" stroke="#092a25" stroke-width="2" stroke-dasharray=""/>
+<rect x="208.48000000000002" y="135.44000000000005" width="487.04" height="756.56" fill="#ffffff16" stroke="#b9d4cf" stroke-width="2" stroke-dasharray=""/>
+<text x="316" y="192" fill="#e6efed" font-size="24">4-inch LCD</text>
+<rect x="148" y="400" width="520" height="480" fill="none" stroke="#7cc9be" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="172" y="856" fill="#7cc9be" font-size="15">REAR BATTERY ENVELOPE</text>
+<circle cx="340" cy="264" r="112" fill="none" stroke="#fdc383" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="236" y="272" fill="#fdc383" font-size="14">REAR SPEAKER</text>
+<rect x="524" y="1000" width="272" height="192" fill="#395b51" stroke="#e7c46a" stroke-width="2" stroke-dasharray=""/>
+<text x="580" y="1104" fill="#e6efed" font-size="19">NFC coil</text>
+<rect x="100" y="1151.6" width="296" height="48.4" fill="#795e3b" stroke="#e7c46a" stroke-width="2" stroke-dasharray=""/>
+<text x="116" y="1184" fill="#e6efed" font-size="16">Wi-Fi antenna</text>
+<circle cx="436" cy="952" r="20.4" fill="#dfebe8" stroke="#b9d4cf" stroke-width="2" stroke-dasharray=""/>
+<text x="420.8" y="956.8" fill="#173c37" font-size="11">UP</text>
+<circle cx="436" cy="1064" r="20.4" fill="#dfebe8" stroke="#b9d4cf" stroke-width="2" stroke-dasharray=""/>
+<text x="420.8" y="1068.8" fill="#173c37" font-size="11">DN</text>
+<circle cx="380" cy="1008" r="20.4" fill="#dfebe8" stroke="#b9d4cf" stroke-width="2" stroke-dasharray=""/>
+<text x="364.8" y="1012.8" fill="#173c37" font-size="11">LT</text>
+<circle cx="492" cy="1008" r="20.4" fill="#dfebe8" stroke="#b9d4cf" stroke-width="2" stroke-dasharray=""/>
+<text x="476.8" y="1012.8" fill="#173c37" font-size="11">RT</text>
+<circle cx="436" cy="1008" r="20.4" fill="#dfebe8" stroke="#b9d4cf" stroke-width="2" stroke-dasharray=""/>
+<text x="420.8" y="1012.8" fill="#173c37" font-size="11">OK</text>
+<text x="492" y="920" fill="#fdc383" font-size="14">~5 mm gap</text>
+<circle cx="124.0" cy="144.0" r="20.8" fill="#adc6bf" stroke="#f8faf5" stroke-width="2" stroke-dasharray=""/>
+<circle cx="124.0" cy="144.0" r="8.8" fill="#f5f6f2" stroke="#173c37" stroke-width="2" stroke-dasharray=""/>
+<text x="150.4" y="152.0" fill="#e6efed" font-size="15">H1</text>
+<circle cx="776.0" cy="144.0" r="20.8" fill="#adc6bf" stroke="#f8faf5" stroke-width="2" stroke-dasharray=""/>
+<circle cx="776.0" cy="144.0" r="8.8" fill="#f5f6f2" stroke="#173c37" stroke-width="2" stroke-dasharray=""/>
+<text x="728.0" y="152.0" fill="#e6efed" font-size="15">H2</text>
+<circle cx="128.0" cy="896.0" r="20.8" fill="#adc6bf" stroke="#f8faf5" stroke-width="2" stroke-dasharray=""/>
+<circle cx="128.0" cy="896.0" r="8.8" fill="#f5f6f2" stroke="#173c37" stroke-width="2" stroke-dasharray=""/>
+<text x="154.4" y="904.0" fill="#e6efed" font-size="15">H3</text>
+<circle cx="776.0" cy="800.0" r="20.8" fill="#adc6bf" stroke="#f8faf5" stroke-width="2" stroke-dasharray=""/>
+<circle cx="776.0" cy="800.0" r="8.8" fill="#f5f6f2" stroke="#173c37" stroke-width="2" stroke-dasharray=""/>
+<text x="728.0" y="808.0" fill="#e6efed" font-size="15">H4</text>
+<circle cx="762.288" cy="320" r="1.6" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-dasharray=""/>
+<text x="716" y="352" fill="#e6efed" font-size="14">MIC</text>
+<text x="112.0" y="336" fill="#e6efed" font-size="14">SPK</text>
+<text x="700" y="616" fill="#e6efed" font-size="15">SD</text>
+<text x="700" y="488" fill="#e6efed" font-size="15">PWR</text>
+<text x="412" y="1160" fill="#e6efed" font-size="15">USB-C</text>
+<path d="M100 1225H804M100 1215V1235M804 1215V1235" fill="none" stroke="#172c2b" stroke-width="2"/>
+<text x="395" y="1253" font-size="20">88 mm</text>
+<path d="M70 120V1200M60 120H80M60 1200H80" fill="none" stroke="#172c2b" stroke-width="2"/>
+<text x="48" y="690" font-size="20" transform="rotate(-90 48 690)">135 mm</text>
+<text x="845" y="160" font-size="24" font-weight="bold">4 × M2 screw mounts</text>
+<text x="845" y="204" font-size="20">Hole: Ø2.2 mm NPTH</text>
+<text x="845" y="238" font-size="20">Reserved area: Ø5.2 mm</text>
+<text x="845" y="272" font-size="18">Boss OD ≤4.5 mm</text>
+<text x="845" y="302" font-size="18">Screw head OD ≤4.0 mm</text>
+<text x="845" y="366" font-size="20">H1: (3, 132)</text>
+<text x="845" y="404" font-size="20">H2: (84.5, 132)</text>
+<text x="845" y="442" font-size="20">H3: (3.5, 38)</text>
+<text x="845" y="480" font-size="20">H4: (84.5, 50)</text>
+<text x="845" y="565" font-size="17">Origin: bottom-left of PCB.</text>
+<text x="845" y="596" font-size="17">Lower mounts are asymmetric</text>
+<text x="845" y="627" font-size="17">to clear antennas and battery.</text>
+<text x="845" y="658" font-size="17"></text>
+<text x="845" y="689" font-size="17">Rear speaker envelope only:</text>
+<text x="845" y="720" font-size="17">Ø28 × 5 mm, part TBD.</text>
+<text x="845" y="751" font-size="17"></text>
+<text x="845" y="782" font-size="17">Keep the microphone port open.</text>
+<text x="845" y="813" font-size="17">Add an insulated lower-edge</text>
+<text x="845" y="844" font-size="17">support ledge to the enclosure.</text>
+<text x="845" y="875" font-size="17"></text>
+<text x="845" y="906" font-size="17">This is not enclosure fit approval.</text>
+<text x="845" y="937" font-size="17">Check FPC fold, component height,</text>
+<text x="845" y="968" font-size="17">speaker wires and tolerances.</text>
+<text x="100" y="1310" font-size="18">Mounting coordinates are authoritative; screen, battery and speaker volumes remain provisional.</text>
+</g></svg>

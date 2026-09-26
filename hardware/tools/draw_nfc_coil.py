@@ -35,7 +35,8 @@ path.extend(mil(a) for p in points[1:] for a in p)
 seen = set()
 circles = ['656616e67d024db4', '299456bad27d416c', '65c6dd6014fe4c41',
            '1b9d8973c1284248', '5ed662331ea74a59']
-centres = [(42,35.5), (42,19.5), (34,27.5), (50,27.5), (42,27.5)]
+placements = json.loads((ROOT/'design/placement-draft.json').read_text())['placements']
+centres = [placements[ref][:2] for ref in ['SW1','SW2','SW3','SW4','SW5']]
 for h, v, doc in rows:
     if doc != 'PCB' or not v:
         continue

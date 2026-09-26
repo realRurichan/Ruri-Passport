@@ -1,0 +1,67 @@
+{
+  "status": "Native DRC required",
+  "tolerance_mil": 0.01,
+  "net_filter": "KEY_OK_N",
+  "changes": [
+    {
+      "track": "28120ecaf9dc4e15",
+      "side": "start",
+      "net": "KEY_OK_N",
+      "pad": "SW5_3",
+      "before_mil": [
+        1726.3756,
+        826.7679
+      ],
+      "after_mil": [
+        1726.3763000000001,
+        826.7699
+      ],
+      "displacement_mm": 5.382163505435905e-05
+    },
+    {
+      "track": "02a93f98aa1718dc",
+      "side": "start",
+      "net": "KEY_OK_N",
+      "pad": "SW5_1",
+      "before_mil": [
+        1580.706,
+        826.7679
+      ],
+      "after_mil": [
+        1580.7063,
+        826.7699
+      ],
+      "displacement_mm": 5.136832097642297e-05
+    },
+    {
+      "track": "08d4e5da082725ab",
+      "side": "end",
+      "net": "KEY_OK_N",
+      "pad": "R19_1",
+      "before_mil": [
+        915.2177,
+        1811.0254
+      ],
+      "after_mil": [
+        915.2219,
+        1811.0236
+      ],
+      "displacement_mm": 0.00011606438213266888
+    },
+    {
+      "track": "ffbcedae3959bb12",
+      "side": "start",
+      "net": "KEY_OK_N",
+      "pad": "U2_8",
+      "before_mil": [
+        1219.4969,
+        1416.4364
+      ],
+      "after_mil": [
+        1219.4924,
+        1416.4331
+      ],
+      "displacement_mm": 0.00014174019331293324
+    }
+  ]
+}
