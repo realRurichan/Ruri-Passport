@@ -1,0 +1,72 @@
+{
+  "name": "Ruri-Passport-RevA",
+  "owner_uuid": "2ff12631e020aa0043a40af248e72e79",
+  "creator_uuid": "2ff12631e020aa0043a40af248e72e79",
+  "created_at": "2026-09-26 14:23:21",
+  "updated_at": "2026-09-26 14:25:10",
+  "modifier_uuid": "2ff12631e020aa0043a40af248e72e79",
+  "content": "",
+  "archive": false,
+  "cbb_project": 0,
+  "thumb": "",
+  "ticket": 1,
+  "g_ticket": 1,
+  "boards": [],
+  "block_symbol_attrs_groups": {},
+  "default_sheet": "",
+  "branch_uuid": "",
+  "pcb_count": 1,
+  "format": "folder",
+  "profile": {
+    "boards": {
+      "b98962ac08adcd61": {
+        "uuid": "b98962ac08adcd61",
+        "title": "Board1",
+        "zIndex": 1
+      }
+    },
+    "schematics": {
+      "23fa63e10211678f": {
+        "uuid": "23fa63e10211678f",
+        "name": "Mainboard",
+        "board": "b98962ac08adcd61",
+        "source": "",
+        "version": "1790403801386",
+        "updateTime": 1790403801387
+      }
+    },
+    "sheets": {
+      "bee18976220fde0b": {
+        "uuid": "bee18976220fde0b",
+        "title": "Core",
+        "schematic_uuid": "23fa63e10211678f",
+        "zIndex": 1,
+        "source": "",
+        "version": "1790403801388",
+        "updateTime": 1790403801388
+      }
+    },
+    "pcbs": {
+      "2de8d5754015f9ac": {
+        "uuid": "2de8d5754015f9ac",
+        "title": "Mainboard",
+        "board": "b98962ac08adcd61",
+        "parent_uuid": "",
+        "source": "",
+        "version": "1790403801394",
+        "updateTime": 1790403801394
+      }
+    },
+    "panels": {},
+    "blockSymbols": {},
+    "owner": {
+      "uuid": "2ff12631e020aa0043a40af248e72e79"
+    },
+    "simSchematics": {},
+    "simulations": {}
+  },
+  "config": {
+    "defaultSheet": "",
+    "settings": {}
+  }
+}
