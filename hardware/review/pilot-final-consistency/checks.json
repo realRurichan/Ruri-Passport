@@ -1,7 +1,7 @@
 {
   "inputs": {
-    "hardware/eda/proposals/Ruri-Passport-Procurement-Bound.epro2": "f95fa769a4b36911b285a6a0dd0ff2eedfa2ccfa75442ce36d1a9a078a60707c",
-    "hardware/manufacturing/latest/Ruri-Passport-RevA-Pilot-20260927.zip": "caea155753fd9a2a358aba03fa77fe84a4900c3a39a3f741f0e650f041164d75"
+    "hardware/eda/proposals/Ruri-Passport-Procurement-Bound.epro2": "0a911450f8979d6926be05e46b2004ed8b1dd404c2153bfe844008591b480f9c",
+    "hardware/manufacturing/latest/Ruri-Passport-RevA-Pilot-20260927.zip": "6937f92b96ef50de8d55bfd96bb5f2b90ed818afa35cb09e73a90c045109408e"
   },
   "bom": {
     "groups": 57,

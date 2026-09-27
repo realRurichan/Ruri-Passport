@@ -1,0 +1,56 @@
+{
+  "status": "NATIVE_IMPORTED_SAVED_DRC_ZERO_GERBER_AND_CPL_VERIFIED_FACTORY_FINAL_UPLOAD_PENDING",
+  "source_sha256": "09f120ea2f8ac38ee9620ddf19bc84dceb1bea75673cfb7b20d1c5f2c909d78e",
+  "changes": [
+    {
+      "id": "e25",
+      "paste_heel_retracted_mm": 0.05
+    },
+    {
+      "id": "e31",
+      "paste_heel_retracted_mm": 0.05
+    },
+    {
+      "id": "e49",
+      "pin": "A12",
+      "old_center_y": 93.77953,
+      "new_center_y": 94.763782,
+      "old_height": 45.27559,
+      "new_height": 43.307087
+    },
+    {
+      "id": "e50",
+      "pin": "B1",
+      "old_center_y": 93.77953,
+      "new_center_y": 94.763782,
+      "old_height": 45.27559,
+      "new_height": 43.307087
+    },
+    {
+      "id": "e63",
+      "pin": "B12",
+      "old_center_y": 93.77953,
+      "new_center_y": 94.763782,
+      "old_height": 45.27559,
+      "new_height": 43.307087
+    },
+    {
+      "id": "e64",
+      "pin": "A1",
+      "old_center_y": 93.77953,
+      "new_center_y": 94.763782,
+      "old_height": 45.27559,
+      "new_height": 43.307087
+    }
+  ],
+  "ground_copper_and_paste_new_heel_mm": 6.83,
+  "copper_clearance_to_065_hole_mm": 0.22509090157900263,
+  "qualification": "GCT recommended PCB layout tolerance \u00b10.05 mm; four GND pads heel retract 0.05 mm, toe unchanged. Two paired paste regions follow copper. Hole centers/diameters, all 12 other contact pads and shell slots unchanged. Native import/export verification required.",
+  "native_source_sha256": "0c4a8fb1e426f815ec2b472b92c16a41a93c122b725faeddb4a611149c6f3cd7",
+  "native_gerber_sha256": "bcf0d3cfd0cdf41e413c671c8ffe549f6794f022406f2f31c1fc9267f8ffeed8",
+  "all_copper_actual_nominal_min_clearance_mm": 0.20988316481265473,
+  "minimum_caused_by": "unchanged adjacent VBUS rectangle at x41.45 /46.55, y7.355mm",
+  "native_drc_checks": 141,
+  "native_drc_errors": 0,
+  "cpl_mounted_rows": 144
+}

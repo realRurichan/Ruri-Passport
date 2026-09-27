@@ -1,0 +1,85 @@
+{
+  "physical_changes": [
+    {
+      "doc": "a5f84d4493f9417c",
+      "type": "FILL",
+      "id": "e31",
+      "fields": [
+        "path"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "POURED",
+      "id": "[\"POURED\",\"e2247\"]",
+      "fields": [
+        "pourFill"
+      ]
+    },
+    {
+      "doc": "a5f84d4493f9417c",
+      "type": "PAD",
+      "id": "e49",
+      "fields": [
+        "centerY",
+        "defaultPad"
+      ]
+    },
+    {
+      "doc": "a5f84d4493f9417c",
+      "type": "PAD",
+      "id": "e63",
+      "fields": [
+        "centerY",
+        "defaultPad"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "POURED",
+      "id": "[\"POURED\",\"e2229\"]",
+      "fields": [
+        "pourFill"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "POURED",
+      "id": "[\"POURED\",\"e3356\"]",
+      "fields": [
+        "pourFill"
+      ]
+    },
+    {
+      "doc": "a5f84d4493f9417c",
+      "type": "PAD",
+      "id": "e64",
+      "fields": [
+        "centerY",
+        "defaultPad"
+      ]
+    },
+    {
+      "doc": "a5f84d4493f9417c",
+      "type": "PAD",
+      "id": "e50",
+      "fields": [
+        "centerY",
+        "defaultPad"
+      ]
+    },
+    {
+      "doc": "a5f84d4493f9417c",
+      "type": "FILL",
+      "id": "e25",
+      "fields": [
+        "path"
+      ]
+    }
+  ],
+  "unchanged": "All component attributes, schematic records, LINE/VIA/REGION/POLY/PAD except four specified USB footprint ground pads remain identical; native repour regenerated three copper fills.",
+  "metadata_changes": {
+    "DOCHEAD_client": 364,
+    "BLOB": 1
+  }
+}

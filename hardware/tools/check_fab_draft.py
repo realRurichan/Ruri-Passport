@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('zip')
 parser.add_argument('--report', required=True)
 parser.add_argument('--profile', choices=['compact-88x85', 'legacy-88x135'], default='compact-88x85')
+parser.add_argument('--usb-ground-heel-retract', action='store_true', help='Verify the qualified 0.05 mm heel retraction on four USB ground pads and their paired paste windows')
 args = parser.parse_args()
 checks = []
 
@@ -89,14 +90,18 @@ with zipfile.ZipFile(args.zip) as z:
     flashes, _ = gerber(read('Gerber_TopLayer.GTL'))
     xs = [40.65,40.95,41.45,41.75,42.25,42.75,43.25,43.75,
           44.25,44.75,45.25,45.75,46.25,46.55,47.05,47.35]
-    check('Sixteen USB copper pads: 0.30 x 1.15 mm at y=7.355',
-          all(any(near(pt,[x,7.355]) and shape and shape[0]=='R' and near(shape[1:],[.3,1.15])
+    ground_xs = {40.65,40.95,47.05,47.35}
+    def usb_pad_target(x):
+        shortened = args.usb_ground_heel_retract and x in ground_xs
+        return [x, 7.38 if shortened else 7.355], [.3, 1.10 if shortened else 1.15]
+    check('Sixteen USB copper pads match qualified ground/signal dimensions',
+          all(any(near(pt,usb_pad_target(x)[0]) and shape and shape[0]=='R' and near(shape[1:],usb_pad_target(x)[1])
                   for pt,shape in flashes) for x in xs))
     _, regions = gerber(read('Gerber_TopPasteMaskLayer.GTP'))
     boxes = [[min(x for x,y in r),min(y for x,y in r),max(x for x,y in r),max(y for x,y in r)] for r in regions if r]
     paste = [(40.8,.6),(41.6,.6),(46.4,.6),(47.2,.6)] + [(x,.3) for x in [42.25,42.75,43.25,43.75,44.25,44.75,45.25,45.75]]
     check('Twelve USB signal paste regions match target land pattern',
-          all(any(near(box,[x-w/2,6.78,x+w/2,7.93]) for box in boxes) for x,w in paste))
+          all(any(near(box,[x-w/2,6.83 if args.usb_ground_heel_retract and x in {40.8,47.2} else 6.78,x+w/2,7.93]) for box in boxes) for x,w in paste))
     outline = read('Gerber_BoardOutlineLayer.GKO')
     height = board_height * 100000
     check(f'88 x {board_height} mm closed rectangular outline present',
@@ -111,11 +116,11 @@ report = {
     'profile': args.profile, 'archive': args.zip, 'sha256': hashlib.sha256(Path(args.zip).read_bytes()).hexdigest(),
     'checks': checks, 'npth_hits': npth, 'usb_slots': slots,
     'pth_round_hits': len(pth), 'via_reference_hits': len(via),
-    'usb_npth_copper_clearance_mm': math.hypot(.01,.5)-.325,
+    'usb_npth_copper_clearance_mm': math.hypot(.01,.55 if args.usb_ground_heel_retract else .5)-.325,
     'manufacturing_released': False,
     'limitations': [
         'This checks selected exported geometry, not all clearances or connectivity.',
-        'USB nominal 0.1751 mm NPTH clearance still requires JLC DFM acceptance.',
+        ('USB ground pad heel retracted 0.05 mm; nominal NPTH-to-pad clearance 0.2251 mm.' if args.usb_ground_heel_retract else 'USB nominal 0.1751 mm NPTH clearance still requires JLC DFM acceptance.'),
         'Combined PTH and separate via-reference drill overlap; do not count/drill them twice.',
         f'GKO carries D4 circular cutout at ({ir_x},{ir_y}), diameter 3.3 mm; assembly qualification remains open.',
         'Paste geometry correspondence does not approve stencil thickness or solder volume.'

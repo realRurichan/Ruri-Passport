@@ -1,0 +1,36 @@
+{
+  "status": "REMOVED_REPOURED_SAVED_NATIVE141_DRC_ZERO_FINAL_GERBER_VERIFIED",
+  "checkpoint": "/private/tmp/ruri-usb-npth-qualified-native.epro2",
+  "removed": [
+    {
+      "id": "e983",
+      "side": "start",
+      "net": "3V18",
+      "layer": 16,
+      "x_mm": 13.434059999999999,
+      "y_mm": 13.6779,
+      "width_mm": 0.7999983999999999
+    },
+    {
+      "id": "e2625",
+      "side": "start",
+      "net": "USB_CC1",
+      "layer": 1,
+      "x_mm": 42.75012278,
+      "y_mm": 9.38705514,
+      "width_mm": 0.199644
+    },
+    {
+      "id": "e3079",
+      "side": "start",
+      "net": "USB_CC1",
+      "layer": 15,
+      "x_mm": 38.88399894,
+      "y_mm": 7.93671768,
+      "width_mm": 0.254
+    }
+  ],
+  "reason": "Each listed endpoint has no other same-net line, pad or via contact. One candidate per layer matches official bare-line warning layer distribution. Native strict DRC after deletion returned []; no connectivity errors introduced. Final factory warning count still requires fresh analysis.",
+  "final_source_sha256": "0a911450f8979d6926be05e46b2004ed8b1dd404c2153bfe844008591b480f9c",
+  "final_gerber_sha256": "6937f92b96ef50de8d55bfd96bb5f2b90ed818afa35cb09e73a90c045109408e"
+}

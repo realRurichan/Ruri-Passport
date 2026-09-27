@@ -6,7 +6,7 @@
 
 本项目受 [FoloToy AI Passport](https://ai-passport.folotoy.cn/) 启发，为独立项目，与 FoloToy 无隶属关系。没有复制其固件或硬件文件，不承诺兼容其社区固件。
 
-当前首板为 **88 × 85 mm 四层 PCB**，整机目标外形约 88 × 135 mm，留出电池和扬声器空间。最新版 [制造文件](hardware/manufacturing/latest/README.md) 已重新导出，原生 PCB DRC 0 错误，354 项引脚网表检查通过，可提交裸板打样和工厂 DFM。两套全贴片仍缺 MIC1/J2/J3 供料确认；[最新报价](hardware/manufacturing/latest/quote.md) 已知项约 ¥586.13/套且仍缺项，未达到 ¥200/套。硬件尚无实机验证。旧装配图需按缩小后的板子更新，不能当本次装配依据。软件原型后续继续开发。
+当前首板为 **88 × 85 mm 四层 PCB**，整机目标外形约 88 × 135 mm，留出电池和扬声器空间。最新版 [制造文件](hardware/manufacturing/latest/README.md) 已重新导出，原生 PCB DRC 0 错误，354 项引脚网表检查通过，可提交裸板打样和工厂 DFM。两套贴片物料现货已匹配，厂家 DFM 装配提示仍在核对；[最新报价](hardware/manufacturing/latest/quote.md) 已知项约 ¥621.30/套且仍缺电池/扬声器/外壳等，未达到 ¥200/套。硬件尚无实机验证。旧装配图需按缩小后的板子更新，不能当本次装配依据。软件原型后续继续开发。
 
 ## 当前实现
 

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "status": "PILOT_PCB_DFM_READY; FULL_SMT_SUPPLY_NOT_READY; NOT_HARDWARE_VALIDATED",
+  "status": "LATEST_NATIVE_AND_GERBER_VERIFIED; SMT_STOCK_MATCHED; FINAL_FACTORY_DFM_PENDING; NOT_HARDWARE_VALIDATED",
   "board_mm": [
     88,
     85
@@ -19,18 +19,39 @@
   "bom_groups": 57,
   "gerber_focused_checks": 8,
   "blocking_full_smt": [
-    "MIC1/J2/J3 supply and assembly availability",
-    "J2 mixed land/slot process and factory DFM acceptance"
+    "Final factory-model DFM disposition and mixed USB assembly process"
   ],
   "sha256": {
     "LICENSE": "d6475a84171f0cf7ff52667dea714df268fc65cea42f0bf328b0b70d4cd0ebab",
     "NOTICE.md": "fafcbb84514bf8de8281270dc7e6f1dd72072aaeec0d9f4db8f61e953acbb6eb",
-    "README.md": "b007bde694fbabd46a3dc69da39b14ea308ef9becdf2e206ed200aeeb76a540e",
-    "Ruri-Passport-RevA-Pilot-20260927.zip": "caea155753fd9a2a358aba03fa77fe84a4900c3a39a3f741f0e650f041164d75",
-    "Ruri-Passport-RevA.epro2": "f95fa769a4b36911b285a6a0dd0ff2eedfa2ccfa75442ce36d1a9a078a60707c",
-    "bom.csv": "afe32c0c4f4e95b9262482f7814acab5218b1bab223e786d413ee07a8c3bea74",
-    "cpl.csv": "3049507c3e5685e88fae681ed22128f6e3601eea662b60eac1186e4a7070f862",
-    "netlist.enet": "79537fe01384b668ed6b2b1c40d75db3a902aa04ba9929eb348a0c47b532595f",
-    "quote.md": "a7c6e97fcfe07f7c6e48df5886650cae2d179e4652105e7bac1cfe791ec6794e"
-  }
+    "README.md": "860fc04182ffdbf600f709a27cfe77a010fad24f8ff9b9239e56dcfd4dd8e554",
+    "Ruri-Passport-RevA-Pilot-20260927.zip": "6937f92b96ef50de8d55bfd96bb5f2b90ed818afa35cb09e73a90c045109408e",
+    "Ruri-Passport-RevA.epro2": "0a911450f8979d6926be05e46b2004ed8b1dd404c2153bfe844008591b480f9c",
+    "bom.csv": "de8ff287c9a0e9f9aca743a51d227c5cf454e72210988c1aa7858612137a43f3",
+    "cpl.csv": "38ca507f50f1dddd542df948e5bea9e379e953fa0c176d50e6e05fa689d97e7d",
+    "netlist.enet": "06ed1ec9e6f5c1576974e7d0d4927b36648a2c48b74b9368f5440622351eb248",
+    "quote.md": "08fa4742b844baf1daff483092aa108a1a50e388cec78210789568d7e494c5b0"
+  },
+  "stock_matching": {
+    "in_stock_rows": 59,
+    "mail_supply_rows": 0,
+    "backorder_rows": 0,
+    "unmatched_rows": 0,
+    "dnp_blank_rows": 1
+  },
+  "quote_two_sets_cny": 1124.7,
+  "dfm_tasks": {
+    "initial_stock": "DFMP2609270089",
+    "after_U3_move": "DFMP2609270143",
+    "after_Q1_move": "DFMP2609270128",
+    "final_usb_and_stub_cleanup": "NOT_YET_UPLOADED"
+  },
+  "final_native_drc_time": "2026-09-27 15:21:24",
+  "usb_npth_nominal_min_copper_clearance_mm": 0.20988316481265473,
+  "removed_line_tails": [
+    "e983",
+    "e2625",
+    "e3079"
+  ],
+  "netlist_validity": "Native 163-component/354-pin netlist retained; source SCH, PAD_NET and component records unchanged by USB footprint-only and three PCB line removals."
 }

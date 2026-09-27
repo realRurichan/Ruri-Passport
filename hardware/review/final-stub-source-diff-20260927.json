@@ -1,0 +1,298 @@
+{
+  "physical": [
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "LINE",
+      "id": "e2625",
+      "removed": true,
+      "fields": [
+        "startY",
+        "width",
+        "zIndex",
+        "startX",
+        "partitionId",
+        "endX",
+        "endY",
+        "layerId",
+        "groupId",
+        "locked",
+        "netName"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "LINE",
+      "id": "e3079",
+      "removed": true,
+      "fields": [
+        "startY",
+        "width",
+        "zIndex",
+        "startX",
+        "partitionId",
+        "endX",
+        "endY",
+        "layerId",
+        "groupId",
+        "locked",
+        "netName"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "POURED",
+      "id": "[\"POURED\",\"e2247\"]",
+      "removed": false,
+      "fields": [
+        "pourFill"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "POURED",
+      "id": "[\"POURED\",\"e2229\"]",
+      "removed": false,
+      "fields": [
+        "pourFill"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "LINE",
+      "id": "e983",
+      "removed": true,
+      "fields": [
+        "startY",
+        "width",
+        "zIndex",
+        "startX",
+        "partitionId",
+        "endX",
+        "endY",
+        "layerId",
+        "groupId",
+        "locked",
+        "netName"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "POURED",
+      "id": "[\"POURED\",\"e3356\"]",
+      "removed": false,
+      "fields": [
+        "pourFill"
+      ]
+    }
+  ],
+  "metadata": [
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder257",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder215",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder243",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder245",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder234",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder242",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder254",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder246",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder218",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "DOCHEAD",
+      "id": "",
+      "removed": false,
+      "fields": [
+        "version",
+        "updateTime"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder250",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder252",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder235",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder210",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder209",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder256",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder251",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder237",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder249",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder253",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder238",
+      "removed": false,
+      "fields": [
+        "max"
+      ]
+    },
+    {
+      "doc": "8ba8b91f8fadb6191a9df22976c275b6",
+      "type": "ELE_PLACEHOLDER",
+      "id": "placeholder255",
+      "removed": false,
+      "fields": [
+        "dataType",
+        "max"
+      ]
+    }
+  ],
+  "all_schematic_components_attributes_netassignments_unchanged": true
+}

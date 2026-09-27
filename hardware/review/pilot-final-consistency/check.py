@@ -13,7 +13,7 @@ for a,b in pcb:
  if a['type']=='ATTR':attrs.setdefault(b['parentId'],{})[b['key']]=b['value']
  if a['type']=='COMPONENT':comps[a['id']]=b
 refs={attrs[k]['Designator']:(k,b) for k,b in comps.items() if 'Designator' in attrs.get(k,{})}
-bom=list(csv.DictReader(open(base/'review/procurement-native-bom-20260927.csv',encoding='utf-8-sig')));cpl=list(csv.DictReader(open(base/'review/procurement-native-cpl-20260927.csv',encoding='utf-8-sig')))
+bom=list(csv.DictReader(open(base/'manufacturing/latest/bom.csv',encoding='utf-8-sig')));cpl=list(csv.DictReader(open(base/'manufacturing/latest/cpl.csv',encoding='utf-8-sig')))
 br={};dup=[]
 for b in bom:
  for ref in b['Designator'].split(','):

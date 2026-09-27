@@ -952,3 +952,19 @@ R76追加校正：PCB单独补Tolerance后严格DRC出现1 Netlist Error，原�
 ## 最终样板文件包 2026-09-27 12:50 后
 已修复 Core 供电线/ESP_EN 误合并：e188 被拖为 490,190→490,210→410,210，删除合并线并恢复两条独立命名导线，清重复标签。新鲜 pilot-fixed-netlist-20260927.enet 163元件/354检查/0错；SCH0致命0错，3组供应商属性警告(有效144件属性differences[])，MP1/2机械脚信息。严格PCB[]；GUI141项0错12:48:52。最终源EPRO2 f95fa769...，PCB body与标准化四颗后的检查点完全一致。新Gerber caea1557...，8项几何通过；pilot-final-consistency再次NFC16/16、桥接只末端0.3mm相邻净空、144BOM/CPL匹配。已替换制造latest旧包，状态PILOT_PCB_DFM_READY/FULL_SMT_SUPPLY_NOT_READY，不可声称两套全贴片或实机成品。
 当前JLC草稿实时371.86元现货物料+682.50加工=1054.36两套，EDA五片裸板参考50+屏幕67.9=1172.26已知项/两套，约586.13每套但仍缺MIC/USB/电池座供料、电池扬声器外壳等。MIC1自动配C2686054与最终C45337831不符；J2 C3020560/J3 C161860均平台邮寄供料，未闭环SMT库存与混合焊接DFM。禁止把预算达成/最低价或可全贴片支付说成完成。下步仅需供料/工厂DFM和样板验证，不重开无限降本重布线。
+
+## 2026-09-27 现货闭环及官方在线DFM进行中
+MIC1改ICS-43434 C5656610（厂家逐脚核对，原6焊盘封装源一致），J2改USB4105-GF-A-120 C5184243（厂家1.2mm定位焊脚、平面封装不变，3313板厚满足），J3同型号换C5306495；已原生SCH修改并禁用导线网络更新同步PCB。新EPRO2 /private/tmp/ruri-stock-bound.epro2；全物理线路/过孔/铺铜记录完全未变，严格DRC[]。新native BOM57组144件/CPL144已写review/procurement-stock-*，正式latest尚未替换。JLC匹配59现货0邮寄0订货0未匹配1DNP空行，物料442.28+加工=1124.70元/两套，不含裸PCB屏电池外壳，远超200预算。
+官方在线DFM任务DFMP2609270089（最新Gerber）完成PCB检查，原始报告jlc-dfm-stock-20260927/official-pcb-report.pdf。存在孔环200、焊盘距离1、其他阻焊/丝印/孔槽警报，未关闭全部风险，不能称官方DFM无警报。孔环0.05疑为NFC .4mm方形SMD焊盘叠加.6mm铜径/.3mm孔径过孔被误当插件孔，需按铜并集确认；厂家明确注释过孔识别为插件孔可忽略。焊盘距离0.09经源/API定位为e454e18 GND与e3171 GND过孔，实际.0872mm，同网不是信号短路，但还需确认阻焊/装配。三裸线头按层Top/G1/G2各一，未完成源对应定位。
+官方SMT DFM正在上传review/procurement-stock-bom/cpl-20260927.csv并匹配；14:xx仍显示上传中，不能将空SMT统计0当通过。PCB下单草稿已由原生Gerber生成8.8×8.5cm四层、选择免费JLC04161H-3313；只有草稿，未下单付款。继续检查真实制造风险，导出新网表并更新生产latest/报价/推送后方可交付。
+
+## 最终现货版局部间距修复及厂家核验继续
+用户要求到可打板再停，本轮继续实际核验。U3 x47.00→47.06mm，仅3段VBUS线微移；原生141项0错误，strict[]。失败的U3大移动及SW2移动均已撤销，源diff确认除U3/位号/3线/原生3层repour外无变化。最新EPRO2 dc4defea...，最新Gerber30338a62...；最终CPL已原生重导并转为163/144，354引脚网表0错，144BOM/CPL与源位置旋转面别料号0差异，NFC16/16。
+新厂家任务DFMP2609270143（file627005140794408962）已经执行PCBDFM，线宽.15/线距.11/孔.3/4层88×85，仍有警报。已开始上传最新57BOM144CPL匹配，不把空SMT0统计当完成。旧任务SMT显示板边U1/J4/IR1/J3，按厂家需≥5mm帮拼板工艺边，单板CPL不偏移。官方能力确认.6mm金属槽在多层范围内，过孔孔环不能按插件阈值判；其余未解决明确写disposition.md。正式latest仍旧包，尚未冒称全贴片放行，后续完成SMT新任务和风险判定后替换latest/manifest/quote/zip并推送。
+
+## USB孔边最终修正及独立生产文件验证 2026-09-27 15:xx
+Q1 y78→77.94mm，GND e3063右移4mil，U3既有修正保留。官方after-Q1任务DFMP2609270128，SMT碰撞0危险1警告、距离0危险1警告、PIN无焊盘0，PDF official-after-q1-report.pdf；仍有其他DFM提示未全面核销。
+四USB GND焊盘heel退0.05mm，height1.15→1.10mm及两配对paste同步，原生导入隔离工程Ruri-Passport-USB-NPTH-Qualified，UUID cfe854afaa9bf32c85fbabcba7a10516cb81c2cd4d9a73532dcdbc83fecff969，PCB bareUUID8ba8b91f8fadb6191a9df22976c275b6，桥8997a117；实际存于proposals/Ruri-Passport-Procurement-Bound_backup子目录。重铺铜保存成功，原生141DRC0，strict[]，native EPRO2 /private/tmp/ruri-usb-npth-qualified-native.epro2 SHA0c4a8fb1…；Gerber /private/tmp/Ruri-Passport-Qualified-Final-20260927.zip SHAbcf0d3cf…，8项几何全过；source diff除4PAD2FILL3POURED只有元数据。fresh CPL163/144→review/usb-qualified-cpl-*，consistency usb-qualified-checks.json：144匹配0差异NFC16/16。独立解析四层Gerber USB孔距全部铜最小0.209883mm（邻近未改VBUS焊盘），地焊盘自身0.2251mm，不要混称整板0.225。
+最新厂家重新上传尚未成功：Mac原生文件框持续出现句号、快捷键输入异常，已异步询问用户键盘/宏；继续本地核对。latest/DFM-CHECK-ONLY-Qualified-20260927.zip仅临时上传副本，必须移除后打包；formal latest仍after-Q1，未覆盖USB候选，主proposal未覆盖，包ZIP未重做，Git未推。需完成最终DFM图形报警定位/裸线头和模型PIN/thermal解释或修复，闭环后再正式latest/manifest/quote/package/push。无下单/付款/第三方消息。
+
+继续清理：删除e983/e2625/e3079三条单端支线；strict[]，重铺保存，native1410，最终EPRO2 /private/tmp/ruri-final-stubs-cleaned.epro2 SHA0a911450…；Gerber /private/tmp/Ruri-Passport-Final-Clean-20260927.zip SHA6937f92b…。source diff确认只有三LINE删除及2POURED改变，其他SCH/组件/PAD_NET/线路不变。8制造几何全过、USB四层孔铜净距最小0.209883、144BOM/CPL无差异/NFC16/16。主proposal及formal latest已更新到此版，manifest明确FINAL_FACTORY_DFM_PENDING；网表是SCH完全未改的前次163/3540原生导出。最终DFM上传仍卡Edge原生文件框，临时latest/DFM-CHECK-ONLY-Qualified-20260927.zip 已换为清理版，当前选中。已请用户手动点击打开，不是权限申请/不是付款。后续继续厂家SMT模型、thermal及阻焊提示判定，删除上传临时副本，再完成放行。

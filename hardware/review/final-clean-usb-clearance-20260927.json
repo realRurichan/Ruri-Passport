@@ -1,0 +1,177 @@
+{
+  "method": "Native final Gerber parsed independently: aperture flashes, strokes, regions and multi-contour even-odd fill; circular arcs subdivided at <=0.5degree. All four copper layers and both USB NPTH checked. Nominal dimensions; fabrication tolerances remain applicable.",
+  "results": [
+    {
+      "layer": "Gerber_TopLayer.GTL",
+      "hole_x_mm": 41.11,
+      "nominal_copper_clearance_mm": 0.20988316481265473,
+      "nearest_kind": "flash",
+      "nearest_geometry": [
+        "flash",
+        [
+          41.45,
+          7.355
+        ],
+        [
+          "R",
+          [
+            0.3,
+            1.15
+          ]
+        ]
+      ]
+    },
+    {
+      "layer": "Gerber_TopLayer.GTL",
+      "hole_x_mm": 46.89,
+      "nominal_copper_clearance_mm": 0.20988316481265473,
+      "nearest_kind": "flash",
+      "nearest_geometry": [
+        "flash",
+        [
+          46.55,
+          7.355
+        ],
+        [
+          "R",
+          [
+            0.3,
+            1.15
+          ]
+        ]
+      ]
+    },
+    {
+      "layer": "Gerber_InnerLayer1.G1",
+      "hole_x_mm": 41.11,
+      "nominal_copper_clearance_mm": 0.25653026338644364,
+      "nearest_kind": "stroke",
+      "nearest_geometry": [
+        "stroke",
+        [
+          41.72280099468918,
+          5.978088195315346
+        ],
+        [
+          41.72540579460316,
+          5.983433810307304
+        ],
+        [
+          "C",
+          [
+            0.2032
+          ]
+        ]
+      ]
+    },
+    {
+      "layer": "Gerber_InnerLayer1.G1",
+      "hole_x_mm": 46.89,
+      "nominal_copper_clearance_mm": 0.2565355527214544,
+      "nearest_kind": "stroke",
+      "nearest_geometry": [
+        "stroke",
+        [
+          46.206862350316435,
+          6.282444439570347
+        ],
+        [
+          46.20686695361182,
+          6.2764979102804626
+        ],
+        [
+          "C",
+          [
+            0.2032
+          ]
+        ]
+      ]
+    },
+    {
+      "layer": "Gerber_InnerLayer2.G2",
+      "hole_x_mm": 41.11,
+      "nominal_copper_clearance_mm": 0.25653026338644364,
+      "nearest_kind": "stroke",
+      "nearest_geometry": [
+        "stroke",
+        [
+          41.72280099468918,
+          5.978088195315346
+        ],
+        [
+          41.72540579460316,
+          5.983433810307304
+        ],
+        [
+          "C",
+          [
+            0.2032
+          ]
+        ]
+      ]
+    },
+    {
+      "layer": "Gerber_InnerLayer2.G2",
+      "hole_x_mm": 46.89,
+      "nominal_copper_clearance_mm": 0.2565355527214544,
+      "nearest_kind": "stroke",
+      "nearest_geometry": [
+        "stroke",
+        [
+          46.206862350316435,
+          6.282444439570347
+        ],
+        [
+          46.20686695361182,
+          6.2764979102804626
+        ],
+        [
+          "C",
+          [
+            0.2032
+          ]
+        ]
+      ]
+    },
+    {
+      "layer": "Gerber_BottomLayer.GBL",
+      "hole_x_mm": 41.11,
+      "nominal_copper_clearance_mm": 0.6049999999999998,
+      "nearest_kind": "flash",
+      "nearest_geometry": [
+        "flash",
+        [
+          39.68,
+          6.78
+        ],
+        [
+          "O",
+          [
+            1.0,
+            2.1
+          ]
+        ]
+      ]
+    },
+    {
+      "layer": "Gerber_BottomLayer.GBL",
+      "hole_x_mm": 46.89,
+      "nominal_copper_clearance_mm": 0.6049999999999998,
+      "nearest_kind": "flash",
+      "nearest_geometry": [
+        "flash",
+        [
+          48.32,
+          6.78
+        ],
+        [
+          "O",
+          [
+            1.0,
+            2.1
+          ]
+        ]
+      ]
+    }
+  ]
+}
