@@ -72,9 +72,36 @@ for ref,nets in {'C60':('VSYS','GND'),'C61':('PWR_ONT','GND'),'C62':('PWR_PDT','
 expect['U1'][23]='PWR_KILL_N'
 expect.pop('Q10')
 expect.pop('R71')
+# Cost revision: one SPI bus, distinct LCD/SD chip selects; freed GPIOs reserved.
+expect['J1'].update({11:'SD_SCK',13:'SD_MOSI'})
+expect['U1'].update({9:'LCD_RESET_N',12:''})
+expect['U2'][13]=''
+# Expander/peripheral switch removal: independent GPIO8 amplifier shutdown.
+for ref in ['U2','U5','C8','R8','R11','R12','R13','R14','R24','R25','R29','R30','R39',
+            *[f'R{i}' for i in range(77,84)]]:
+ expect.pop(ref,None)
+expect['U1'][12]='AMP_ENABLE'
+expect['U3'].update({5:'GND',6:'VBUS_5V',7:'',9:''})
+expect['U4'][2]='GND'
+expect['J4'][9]=''
+for pins in expect.values():
+ for pin,net in list(pins.items()):
+  if net=='3V18_PERIPH':pins[pin]='3V18'
+# Discrete power hold replaces LTC controller; ADC sampling still isolated.
+for ref in ['U10','R70','R72','C60','C61','C62','C63']:expect.pop(ref,None)
+expect['U1'].update({11:'PWR_KEY_ACTIVE_H',23:'PWR_HOLD'})
+expect['SW6'][1]='BUTTON_RAW'
+expect['Q11'][1]='PWR_HOLD'
+expect['Q15'][1]='PWR_HOLD'
+expect['Q16']={1:'BUTTON_RAW',2:'GND',3:'PWR_KEY_ACTIVE_H'}
+expect['D8']={1:'BUTTON_RAW',2:'MAIN_SWITCH_D'}
+expect['R84']={1:'PWR_HOLD',2:'GND'}
+expect['R85']={1:'3V18',2:'PWR_KEY_ACTIVE_H'}
+expect['R86']={1:'VSYS',2:'BUTTON_RAW'}
 errors=[];count=0
 refs=[x['props']['Designator'] for x in j['components'].values()]
-for ref in ['Q10','R71']:
+for ref in ['Q10','R71','U10','R70','R72','C60','C61','C62','C63','U2','U5','C8','R8','R11','R12','R13','R14','R24','R25','R29','R30','R39',
+            *[f'R{i}' for i in range(77,84)]]:
  if ref in c:errors.append(ref+': obsolete KILL inverter still present')
 if len(refs)!=len(set(refs)):errors.append('Duplicate component designators')
 for ref,pins in expect.items():

@@ -1,0 +1,52 @@
+{
+  "inputs": {
+    "hardware/eda/proposals/Ruri-Passport-Procurement-Bound.epro2": "9480fe99de0da563014ac71fd869daa3b686ec182a10bfa1df763341d42a0d7b",
+    "hardware/review/Ruri-Passport-Procurement-NFC-REVIEW-20260927.zip": "4085ad4bd8d85ea1079ccfc3d584d97bae9378c6c6565c70d80348896097403a"
+  },
+  "bom": {
+    "groups": 57,
+    "quantity": 144,
+    "refs": 144,
+    "duplicates": [],
+    "empty_parts": []
+  },
+  "cpl": {
+    "rows": 144,
+    "refset_matches_bom": true,
+    "coordinate_rotation_layer_mismatches": [],
+    "supplier_mismatches": []
+  },
+  "coil": {
+    "segments": 16,
+    "gerber_segments_matching_source": 16,
+    "width_mm": 0.39999919999999994,
+    "bridge_overlap_segments": [
+      16
+    ],
+    "bridge_min_nonterminal_clearance_mm": 0.29999939999999864,
+    "terminal_via": {
+      "x_mm": 84.7,
+      "y_mm": 22.0,
+      "copper_diameter_mm": 0.6
+    },
+    "bridge_flag": true,
+    "bridge_nets": [
+      "ANT_B",
+      "ANT_A"
+    ]
+  },
+  "drills": {
+    "npth_hits": 7,
+    "usb_alignment_holes_present": true,
+    "usb_plated_slots": [
+      "X39.68Y7.33G85X39.68Y6.23",
+      "X48.32Y7.33G85X48.32Y6.23",
+      "X48.32Y3.0G85X48.32Y2.2",
+      "X39.68Y3.0G85X39.68Y2.2"
+    ],
+    "usb_slot_width_06": true
+  },
+  "outline": {
+    "88x85_rectangle": true
+  }
+}

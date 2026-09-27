@@ -1,0 +1,1008 @@
+{
+  "installed_checked": 144,
+  "differences": [],
+  "evidence": [
+    {
+      "ref": "J4",
+      "supplier": "C114218",
+      "mpn": "DM3AT-SF-PEJM5",
+      "footprint": "SD-SMD_DM3AT-SF-PEJM5",
+      "differences": {}
+    },
+    {
+      "ref": "R32",
+      "supplier": "C23140",
+      "mpn": "0603WAF330JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R33",
+      "supplier": "C23140",
+      "mpn": "0603WAF330JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R34",
+      "supplier": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R35",
+      "supplier": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R36",
+      "supplier": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R37",
+      "supplier": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R38",
+      "supplier": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C18",
+      "supplier": "C19702",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C19",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "U7",
+      "supplier": "C910544",
+      "mpn": "MAX98357AETE+T",
+      "footprint": "TQFN-16_L3.0-W3.0-P0.50-BL-EP1.5",
+      "differences": {}
+    },
+    {
+      "ref": "R40",
+      "supplier": "C23140",
+      "mpn": "0603WAF330JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R41",
+      "supplier": "C23140",
+      "mpn": "0603WAF330JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R42",
+      "supplier": "C23140",
+      "mpn": "0603WAF330JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C20",
+      "supplier": "C19702",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C21",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "J5",
+      "supplier": "C295747",
+      "mpn": "S2B-PH-SM4-TB(LF)(SN)",
+      "footprint": "CONN-SMD_P2.00_S2B-PH-SM4-TB-LF-SN",
+      "differences": {}
+    },
+    {
+      "ref": "MIC1",
+      "supplier": "C45337831",
+      "mpn": "SPH0645LM4H-B",
+      "footprint": "MIC-SMD_6P-L3.5-W2.7-P0.90-BL",
+      "differences": {}
+    },
+    {
+      "ref": "C22",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R43",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R44",
+      "supplier": "C22935",
+      "mpn": "0603WAF1004T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R45",
+      "supplier": "C23137",
+      "mpn": "0603WAF3303T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C23",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "D1",
+      "supplier": "C97502",
+      "mpn": "TPD2EUSB30DRTR",
+      "footprint": "SOT-9X3-3_L1.0-W0.8-P0.35-LS1.0-BR",
+      "differences": {}
+    },
+    {
+      "ref": "D2",
+      "supplier": "C97502",
+      "mpn": "TPD2EUSB30DRTR",
+      "footprint": "SOT-9X3-3_L1.0-W0.8-P0.35-LS1.0-BR",
+      "differences": {}
+    },
+    {
+      "ref": "D3",
+      "supplier": "C97502",
+      "mpn": "TPD2EUSB30DRTR",
+      "footprint": "SOT-9X3-3_L1.0-W0.8-P0.35-LS1.0-BR",
+      "differences": {}
+    },
+    {
+      "ref": "L2",
+      "supplier": "C437367",
+      "mpn": "LQW18CNR16J00D",
+      "footprint": "IND-SMD_L1.6-W0.8-1",
+      "differences": {}
+    },
+    {
+      "ref": "C40",
+      "supplier": "C17578242",
+      "mpn": "GCM1885C2A751FA16J",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C42",
+      "supplier": "C296067",
+      "mpn": "0603N620G500CT",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C44",
+      "supplier": "C519477",
+      "mpn": "CC0603GRNPO9BN201",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R60",
+      "supplier": "C17928",
+      "mpn": "1206W4F100KT5E",
+      "footprint": "R1206",
+      "differences": {}
+    },
+    {
+      "ref": "R66",
+      "supplier": "C17928",
+      "mpn": "1206W4F100KT5E",
+      "footprint": "R1206",
+      "differences": {}
+    },
+    {
+      "ref": "L3",
+      "supplier": "C437367",
+      "mpn": "LQW18CNR16J00D",
+      "footprint": "IND-SMD_L1.6-W0.8-1",
+      "differences": {}
+    },
+    {
+      "ref": "C41",
+      "supplier": "C17578242",
+      "mpn": "GCM1885C2A751FA16J",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C43",
+      "supplier": "C296067",
+      "mpn": "0603N620G500CT",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C45",
+      "supplier": "C519477",
+      "mpn": "CC0603GRNPO9BN201",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R61",
+      "supplier": "C17928",
+      "mpn": "1206W4F100KT5E",
+      "footprint": "R1206",
+      "differences": {}
+    },
+    {
+      "ref": "R67",
+      "supplier": "C17928",
+      "mpn": "1206W4F100KT5E",
+      "footprint": "R1206",
+      "differences": {}
+    },
+    {
+      "ref": "R62",
+      "supplier": "C4190",
+      "mpn": "0603WAF2201T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C46",
+      "supplier": "C309468",
+      "mpn": "CC0603FRNPO9BN102",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R63",
+      "supplier": "C4190",
+      "mpn": "0603WAF2201T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C47",
+      "supplier": "C309468",
+      "mpn": "CC0603FRNPO9BN102",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "D5",
+      "supplier": "C97502",
+      "mpn": "TPD2EUSB30DRTR",
+      "footprint": "SOT-9X3-3_L1.0-W0.8-P0.35-LS1.0-BR",
+      "differences": {}
+    },
+    {
+      "ref": "D6",
+      "supplier": "C97502",
+      "mpn": "TPD2EUSB30DRTR",
+      "footprint": "SOT-9X3-3_L1.0-W0.8-P0.35-LS1.0-BR",
+      "differences": {}
+    },
+    {
+      "ref": "D7",
+      "supplier": "C97502",
+      "mpn": "TPD2EUSB30DRTR",
+      "footprint": "SOT-9X3-3_L1.0-W0.8-P0.35-LS1.0-BR",
+      "differences": {}
+    },
+    {
+      "ref": "U8",
+      "supplier": "C3303790",
+      "mpn": "PN7160A1HN/C100Y",
+      "footprint": "HVQFN-40_L6.0-W6.0-P0.50-BL-EP4.1",
+      "differences": {}
+    },
+    {
+      "ref": "C29",
+      "supplier": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C30",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C31",
+      "supplier": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C32",
+      "supplier": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C33",
+      "supplier": "C23630",
+      "mpn": "CL10A225KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C34",
+      "supplier": "C23630",
+      "mpn": "CL10A225KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C35",
+      "supplier": "C23630",
+      "mpn": "CL10A225KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C36",
+      "supplier": "C23630",
+      "mpn": "CL10A225KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C37",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "Y1",
+      "supplier": "C338245",
+      "mpn": "XRCGB27M120F3M10R0",
+      "footprint": "CRYSTAL-SMD_4P-L2.0-W1.6-BL",
+      "differences": {}
+    },
+    {
+      "ref": "C38",
+      "supplier": "C519489",
+      "mpn": "CC0603FRNPO9BN160",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C39",
+      "supplier": "C519489",
+      "mpn": "CC0603FRNPO9BN160",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R59",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R46",
+      "supplier": "C844266",
+      "mpn": "TNPW0603200RBEEA",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R47",
+      "supplier": "C844266",
+      "mpn": "TNPW0603200RBEEA",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "D4",
+      "supplier": "C108185",
+      "mpn": "IR91-21C/TR10",
+      "footprint": "LED-SMD_IR91-21C-TR10",
+      "differences": {}
+    },
+    {
+      "ref": "Q1",
+      "supplier": "C20917",
+      "mpn": "AO3400A",
+      "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "R48",
+      "supplier": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R49",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "IR1",
+      "supplier": "C91447",
+      "mpn": "IRM-H638T/TR2",
+      "footprint": "SENSOR-SMD_IRM-H638T-TR2-TL",
+      "differences": {}
+    },
+    {
+      "ref": "R50",
+      "supplier": "C23182",
+      "mpn": "0603WAF470JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C24",
+      "supplier": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C25",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R51",
+      "supplier": "C25819",
+      "mpn": "0603WAF4702T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "U9",
+      "supplier": "C398363",
+      "mpn": "TLV9001IDBVR",
+      "footprint": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
+      "differences": {}
+    },
+    {
+      "ref": "Q2",
+      "supplier": "C20917",
+      "mpn": "AO3400A",
+      "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "R52",
+      "supplier": "C4184",
+      "mpn": "0603WAF2002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R53",
+      "supplier": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C27",
+      "supplier": "C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R54",
+      "supplier": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R55",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R56",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R57",
+      "supplier": "C22936",
+      "mpn": "0603WAF100KT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C28",
+      "supplier": "C309468",
+      "mpn": "CC0603FRNPO9BN102",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C26",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R58",
+      "supplier": "C21189",
+      "mpn": "0603WAF0000T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R6",
+      "supplier": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R7",
+      "supplier": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R9",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R10",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R15",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "SW1",
+      "supplier": "C21262538",
+      "mpn": "TS-1187A-A-I-B",
+      "footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.7",
+      "differences": {}
+    },
+    {
+      "ref": "R16",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "SW2",
+      "supplier": "C21262538",
+      "mpn": "TS-1187A-A-I-B",
+      "footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.7",
+      "differences": {}
+    },
+    {
+      "ref": "R17",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "SW3",
+      "supplier": "C21262538",
+      "mpn": "TS-1187A-A-I-B",
+      "footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.7",
+      "differences": {}
+    },
+    {
+      "ref": "R18",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "SW4",
+      "supplier": "C21262538",
+      "mpn": "TS-1187A-A-I-B",
+      "footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.7",
+      "differences": {}
+    },
+    {
+      "ref": "R19",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "SW5",
+      "supplier": "C21262538",
+      "mpn": "TS-1187A-A-I-B",
+      "footprint": "SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL_H1.7",
+      "differences": {}
+    },
+    {
+      "ref": "J2",
+      "supplier": "C3020560",
+      "mpn": "USB4105-GF-A",
+      "footprint": "RURI_GCT_USB4105_REVB1",
+      "differences": {}
+    },
+    {
+      "ref": "R20",
+      "supplier": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R21",
+      "supplier": "C23186",
+      "mpn": "0603WAF5101T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "U3",
+      "supplier": "C54313",
+      "mpn": "BQ24074RGTR",
+      "footprint": "QFN-16_L3.0-W3.0-P0.50-TL-EP1.7",
+      "differences": {}
+    },
+    {
+      "ref": "C9",
+      "supplier": "C59782",
+      "mpn": "CL10B105KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C10",
+      "supplier": "C19702",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C11",
+      "supplier": "C19702",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "U4",
+      "supplier": "C2845237",
+      "mpn": "TPS63802DLAR",
+      "footprint": "VSON-HR-10_L3.0-W2.0-P0.50-TL",
+      "differences": {}
+    },
+    {
+      "ref": "R26",
+      "supplier": "C861467",
+      "mpn": "RT0603BRD0753K6L",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R27",
+      "supplier": "C95204",
+      "mpn": "RT0603BRD0710KL",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C12",
+      "supplier": "C19702",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C13",
+      "supplier": "C7432770",
+      "mpn": "HGC0603R5226M100NTHJ",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C14",
+      "supplier": "C7432770",
+      "mpn": "HGC0603R5226M100NTHJ",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R28",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "SW6",
+      "supplier": "C963349",
+      "mpn": "B3U-3000P",
+      "footprint": "KEY-SMD_B3U-3000P",
+      "differences": {}
+    },
+    {
+      "ref": "R31",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C15",
+      "supplier": "C59782",
+      "mpn": "CL10B105KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C16",
+      "supplier": "C59782",
+      "mpn": "CL10B105KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R22",
+      "supplier": "C4190",
+      "mpn": "0603WAF2201T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R23",
+      "supplier": "C23162",
+      "mpn": "0603WAF4701T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "J3",
+      "supplier": "C161860",
+      "mpn": "S3B-XH-SM4-TB(LF)(SN)",
+      "footprint": "CONN-TH_S3B-XH-SM4-TB-LF-SN",
+      "differences": {}
+    },
+    {
+      "ref": "Q11",
+      "supplier": "C20917",
+      "mpn": "AO3400A",
+      "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "Q12",
+      "supplier": "C15127",
+      "mpn": "AO3401A",
+      "footprint": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "Q13",
+      "supplier": "C15127",
+      "mpn": "AO3401A",
+      "footprint": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "Q14",
+      "supplier": "C15127",
+      "mpn": "AO3401A",
+      "footprint": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "Q15",
+      "supplier": "C20917",
+      "mpn": "AO3400A",
+      "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "R74",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R75",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R76",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "D8",
+      "supplier": "C7502705",
+      "mpn": "BAT54W",
+      "footprint": "SOD-123_L2.7-W1.6-LS3.7-RD",
+      "differences": {}
+    },
+    {
+      "ref": "Q16",
+      "supplier": "C20917",
+      "mpn": "AO3400A",
+      "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+      "differences": {}
+    },
+    {
+      "ref": "R84",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R85",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R86",
+      "supplier": "C25803",
+      "mpn": "0603WAF1003T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R73",
+      "supplier": "C21190",
+      "mpn": "0603WAF1001T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C1",
+      "supplier": "C19702",
+      "mpn": "CL10A106KP8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C2",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R1",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "C3",
+      "supplier": "C59782",
+      "mpn": "CL10B105KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R2",
+      "supplier": "C23345",
+      "mpn": "0603WAF220JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R3",
+      "supplier": "C23345",
+      "mpn": "0603WAF220JT5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "U1",
+      "supplier": "C2913202",
+      "mpn": "ESP32-S3-WROOM-1-N16R8",
+      "footprint": "WIRELM-SMD_ESP32-S3-WROOM-1",
+      "differences": {}
+    },
+    {
+      "ref": "C6",
+      "supplier": "C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "C7",
+      "supplier": "C19666",
+      "mpn": "CL10A475KO8NNNC",
+      "footprint": "C0603",
+      "differences": {}
+    },
+    {
+      "ref": "R4",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "R5",
+      "supplier": "C25804",
+      "mpn": "0603WAF1002T5E",
+      "footprint": "R0603",
+      "differences": {}
+    },
+    {
+      "ref": "J1",
+      "supplier": "C506795",
+      "mpn": "FH12A-40S-0.5SH(55)",
+      "footprint": "RURI_FH12A40_TOP_DRAFT",
+      "differences": {}
+    }
+  ],
+  "custom_l1_validation": "hardware/review/l1-sunlord-qualified-candidate-20260927.json manufacturer specs and land pattern, native lib exact query empty; live JLC quote confirms C6331050 819 stock 1.126 CNY"
+}

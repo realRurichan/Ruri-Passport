@@ -8,10 +8,26 @@
   "maximum_boss_diameter": 4.5,
   "maximum_screw_head_diameter": 4.0,
   "holes": [
-    {"name": "H1", "x": 3.0, "y": 132.0},
-    {"name": "H2", "x": 84.5, "y": 132.0},
-    {"name": "H3", "x": 3.5, "y": 38.0},
-    {"name": "H4", "x": 84.5, "y": 50.0}
+    {
+      "name": "H1",
+      "x": 3.0,
+      "y": 82
+    },
+    {
+      "name": "H2",
+      "x": 84.5,
+      "y": 62
+    },
+    {
+      "name": "H3",
+      "x": 3.5,
+      "y": 38.0
+    },
+    {
+      "name": "H4",
+      "x": 84.5,
+      "y": 47
+    }
   ],
-  "notes": "Asymmetric lower supports avoid both antennas and the battery. Enclosure also needs insulating lower-edge support. Dimensions are a PCB reservation, not a completed enclosure fit check."
+  "notes": "88x85 trial: right holes lowered to avoid SD tray and microphone/resistor courtyard. Case needs insulating top/right support ledge; actual screw/boss height pending."
 }

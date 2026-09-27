@@ -10,6 +10,7 @@ from pathlib import Path
 parser = argparse.ArgumentParser()
 parser.add_argument('zip')
 parser.add_argument('--report', required=True)
+parser.add_argument('--profile', choices=['compact-88x85', 'legacy-88x135'], default='compact-88x85')
 args = parser.parse_args()
 checks = []
 
@@ -66,8 +67,15 @@ with zipfile.ZipFile(args.zip) as z:
               'Gerber_InnerLayer2.G2', 'Gerber_BottomLayer.GBL']
     check('Four nonempty copper layers exported', all(n in names and len(z.read(n)) > 1000 for n in copper))
     npth, _ = drill(read('Drill_NPTH_Through.DRL'))
-    expected = [[.4,82.786,110], [.65,46.89,6.28], [.65,41.11,6.28],
-                [2.2,3,132], [2.2,84.5,132], [2.2,3.5,38], [2.2,84.5,50]]
+    if args.profile == 'compact-88x85':
+        mounting = json.loads((Path(__file__).resolve().parents[1] / 'design/mounting-holes.json').read_text())
+        expected = [[.4,82.786,55], [.65,46.89,6.28], [.65,41.11,6.28]]
+        expected += [[mounting['hole_diameter'], h['x'], h['y']] for h in mounting['holes']]
+        board_height, ir_x, ir_y = 85, 70, 82
+    else:
+        expected = [[.4,82.786,110], [.65,46.89,6.28], [.65,41.11,6.28],
+                    [2.2,3,132], [2.2,84.5,132], [2.2,3.5,38], [2.2,84.5,50]]
+        board_height, ir_x, ir_y = 135, 82, 127
     check('Seven NPTH drill hits, correct diameters and positions',
           len(npth)==len(expected) and all(any(near(a,b) for a in npth) for b in expected))
     pth, slots = drill(read('Drill_PTH_Through.DRL'))
@@ -90,14 +98,17 @@ with zipfile.ZipFile(args.zip) as z:
     check('Twelve USB signal paste regions match target land pattern',
           all(any(near(box,[x-w/2,6.78,x+w/2,7.93]) for box in boxes) for x,w in paste))
     outline = read('Gerber_BoardOutlineLayer.GKO')
-    check('88 x 135 mm closed rectangular outline present',
-          'G01X0Y0D02*\nG01X0Y13500000D01*\nG01X8800000Y13500000D01*\nG01X8800000Y0D01*\nG01X0Y0D01*' in outline)
-    check('D4 cutout: diameter 3.30 mm, centered at (82,127)',
-          'G01X8035000Y12700000D02*\nG02X8365000Y12700000I165000J0D01*' in outline
-          and 'G02X8035000Y12700000I-165000J0D01*' in outline)
+    height = board_height * 100000
+    check(f'88 x {board_height} mm closed rectangular outline present',
+          f'G01X0Y0D02*\nG01X0Y{height}D01*\nG01X8800000Y{height}D01*\nG01X8800000Y0D01*\nG01X0Y0D01*' in outline)
+    left, right, cy = round((ir_x-1.65)*100000), round((ir_x+1.65)*100000), ir_y*100000
+    check(f'D4 cutout: diameter 3.30 mm, centered at ({ir_x},{ir_y})',
+          f'G01X{left}Y{cy}D02*\nG02X{right}Y{cy}I165000J0D01*' in outline
+          and f'G02X{left}Y{cy}I-165000J0D01*' in outline)
+
 
 report = {
-    'archive': args.zip, 'sha256': hashlib.sha256(Path(args.zip).read_bytes()).hexdigest(),
+    'profile': args.profile, 'archive': args.zip, 'sha256': hashlib.sha256(Path(args.zip).read_bytes()).hexdigest(),
     'checks': checks, 'npth_hits': npth, 'usb_slots': slots,
     'pth_round_hits': len(pth), 'via_reference_hits': len(via),
     'usb_npth_copper_clearance_mm': math.hypot(.01,.5)-.325,
@@ -106,7 +117,7 @@ report = {
         'This checks selected exported geometry, not all clearances or connectivity.',
         'USB nominal 0.1751 mm NPTH clearance still requires JLC DFM acceptance.',
         'Combined PTH and separate via-reference drill overlap; do not count/drill them twice.',
-        'GKO carries D4 circular cutout at (82,127), diameter 3.3 mm; assembly qualification remains open.',
+        f'GKO carries D4 circular cutout at ({ir_x},{ir_y}), diameter 3.3 mm; assembly qualification remains open.',
         'Paste geometry correspondence does not approve stencil thickness or solder volume.'
     ]
 }

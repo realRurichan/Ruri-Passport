@@ -11866,6 +11866,12 @@
                     "TrackPhysics": ""
                 }
             },
+            "ESP_EN": {
+                "net": "ESP_EN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
             "KEY_UP_N": {
                 "net": "KEY_UP_N",
                 "ruleMap": {
@@ -11976,12 +11982,6 @@
             },
             "I2C_SCL": {
                 "net": "I2C_SCL",
-                "ruleMap": {
-                    "TrackPhysics": ""
-                }
-            },
-            "ESP_EN": {
-                "net": "ESP_EN",
                 "ruleMap": {
                     "TrackPhysics": ""
                 }
